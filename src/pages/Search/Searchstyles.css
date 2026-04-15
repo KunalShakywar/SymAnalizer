@@ -82,13 +82,6 @@
   font-family: "Syne", sans-serif;
 }
 
-.search-bg-grid {
-  pointer-events: none;
-  position: fixed;
-  z-index: 0;
-}
-
-
 .search-layout {
   position: relative;
   z-index: 1;
@@ -199,7 +192,7 @@
 
 .search-textarea:focus {
   border-color: #24fb8531;
-  background: #eff5e80d;
+  background: #08ad080d;
   box-shadow: 0 0 0 1px rgba(36, 251, 72, 0);
 }
 

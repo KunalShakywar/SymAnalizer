@@ -1,162 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenuSearchFill } from "react-icons/ri";
-import symptomsData from "../data/sym.json";
 import "./Searchstyles.css";
-
-const SEARCH_HISTORY_KEY = "ai-search-history";
-const MAX_HISTORY_ITEMS = 6;
-
-const loadingPhrases = [
-  "Analyzing symptoms...",
-  "Cross-referencing database...",
-  "Identifying patterns...",
-  "Generating diagnosis...",
-  "Compiling recommendations...",
-];
-
-const progressSteps = [
-  "Neural pattern match",
-  "Medical db query",
-  "Risk assessment",
-];
-
-const fallbackAnswer = {
-  symptoms: ["Koi matching condition nahi mili"],
-  issue: "Condition Not Found",
-  medicines: [],
-  advice: [
-    "Symptoms aur detail me likhein",
-    "Doctor se mil kar sahi diagnosis lein",
-  ],
-};
-
-const STOP_WORDS = new Set([
-  "a",
-  "an",
-  "and",
-  "are",
-  "feeling",
-  "from",
-  "hai",
-  "ho",
-  "have",
-  "i",
-  "im",
-  "is",
-  "ka",
-  "ke",
-  "ki",
-  "me",
-  "mera",
-  "meri",
-  "mujhe",
-  "my",
-  "or",
-  "since",
-  "the",
-  "to",
-  "with",
-]);
-
-function normalizeText(text) {
-  return text.toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
-}
-
-function getMeaningfulTokens(text) {
-  return normalizeText(text)
-    .split(" ")
-    .filter((token) => token.length > 1 && !STOP_WORDS.has(token));
-}
-
-function scoreCondition(condition, normalizedQuery, queryTokens) {
-  const matchedTerms = new Set();
-  let score = 0;
-
-  const issueText = normalizeText(condition.issue);
-  const keywordTexts = condition.keywords.map(normalizeText);
-  const symptomTexts = condition.symptoms.map(normalizeText);
-
-  if (normalizedQuery.length > 2) {
-    if (issueText.includes(normalizedQuery)) {
-      score += 12;
-      matchedTerms.add(condition.issue);
-    }
-
-    keywordTexts.forEach((keyword, index) => {
-      if (keyword.includes(normalizedQuery)) {
-        score += 10;
-        matchedTerms.add(condition.keywords[index]);
-      }
-    });
-
-    symptomTexts.forEach((symptom, index) => {
-      if (symptom.includes(normalizedQuery)) {
-        score += 8;
-        matchedTerms.add(condition.symptoms[index]);
-      }
-    });
-  }
-
-  queryTokens.forEach((token) => {
-    if (issueText.includes(token)) {
-      score += 4;
-      matchedTerms.add(token);
-    }
-
-    keywordTexts.forEach((keyword, index) => {
-      if (keyword.includes(token)) {
-        score += 3;
-        matchedTerms.add(condition.keywords[index]);
-      }
-    });
-
-    symptomTexts.forEach((symptom, index) => {
-      if (symptom.includes(token)) {
-        score += 2;
-        matchedTerms.add(condition.symptoms[index]);
-      }
-    });
-  });
-
-  if (matchedTerms.size === 0) {
-    return null;
-  }
-
-  return {
-    ...condition,
-    confidence: Math.min(98, 36 + score * 6),
-    matchedTerms: Array.from(matchedTerms).slice(0, 4),
-    score,
-  };
-}
-
-function buildSearchResult(input) {
-  const normalizedQuery = normalizeText(input);
-  const queryTokens = getMeaningfulTokens(input);
-
-  const rankedMatches = symptomsData
-    .map((condition) => scoreCondition(condition, normalizedQuery, queryTokens))
-    .filter(Boolean)
-    .sort((a, b) => b.score - a.score || b.confidence - a.confidence)
-    .slice(0, 3);
-
-  if (rankedMatches.length === 0) {
-    return {
-      primary: fallbackAnswer,
-      related: [],
-      query: input,
-      isFallback: true,
-    };
-  }
-
-  return {
-    primary: rankedMatches[0],
-    related: rankedMatches.slice(1),
-    query: input,
-    isFallback: false,
-  };
-}
+import ResultCard from "./ResultCard";
+import { buildSearchResult } from "./searchUtils";
+import {
+  MAX_HISTORY_ITEMS,
+  SEARCH_HISTORY_KEY,
+  loadingPhrases,
+  progressSteps,
+} from "./searchConfig";
 
 export default function AISearchUI() {
   const [query, setQuery] = useState("");
@@ -237,22 +90,24 @@ export default function AISearchUI() {
     <div className="search-shell">
       <div className="search-bg-grid" />
 
-
       <div className="search-layout">
         <header className="search-header">
           <div className="search-kicker">
-            <Link to="/symgallery" className="search-gallery-link" aria-label="Open symptom gallery">
+            <Link
+              to="/symgallery"
+              className="search-gallery-link"
+              aria-label="Open symptom gallery"
+            >
               <RiMenuSearchFill size={28} />
             </Link>
             <span className="">Click and Check condition</span>
             <span className="search-kicker-dot" />
-          
           </div>
 
           <h1 className="search-title">
             Symptom
             <br />
-            <span style={{color:"#4CAF50",}}>Analyzer</span>
+            <span style={{ color: "#4CAF50" }}>Analyzer</span>
           </h1>
 
           <p className="search-subtitle">
@@ -311,7 +166,7 @@ export default function AISearchUI() {
                     <path d="m21 21-4.35-4.35" />
                   </svg>
                 )}
-                <span>{loading ? "Scanning" : "Analyze"}</span>
+                <span>{loading ? "Analyzing" : "Analyze"}</span>
               </button>
             </div>
           </div>
@@ -342,7 +197,9 @@ export default function AISearchUI() {
             <div className="search-scanline" />
 
             <div className="search-panel-label">Processing query</div>
-            <div className="search-loading-title">{loadingPhrases[phraseIndex]}</div>
+            <div className="search-loading-title">
+              {loadingPhrases[phraseIndex]}
+            </div>
 
             <div className="search-loading-dots" aria-hidden="true">
               {[0, 1, 2, 3, 4].map((index) => (
@@ -450,39 +307,12 @@ export default function AISearchUI() {
             )}
 
             <div className="search-disclaimer">
-              ⚠ This is educational purposes only. Always consult a licensed
-              medical professional for diagnosis and treatment Thank You :)
+              ⚠ This is educational purposes only. Always consult a licensed medical
+              professional for diagnosis and treatment Thank You :)
             </div>
           </section>
         )}
       </div>
-    </div>
-  );
-}
-
-function ResultCard({ label, icon, items = [], delay = 0, wide = false }) {
-  return (
-    <div
-      className={`result-card${wide ? " result-card-wide" : ""}`}
-      style={{ animationDelay: `${delay}ms` }}
-    >
-      <div className="result-card-title">
-        <span>{icon}</span>
-        <span>{label}</span>
-      </div>
-
-      {items.length === 0 ? (
-        <div className="result-card-empty">None identified</div>
-      ) : (
-        <div className="result-card-list">
-          {items.map((item, index) => (
-            <div key={index} className="result-card-item">
-              <span className="result-card-bullet" />
-              <span className="result-card-text">{item}</span>
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   );
 }

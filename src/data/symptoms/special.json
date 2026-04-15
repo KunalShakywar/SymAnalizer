@@ -1,0 +1,1247 @@
+[
+  {
+    "emoji": "🩸",
+    "color": "#fb7185",
+    "keywords": [
+      "diabetes",
+      "high blood sugar",
+      "sugar level high",
+      "excessive thirst diabetes",
+      "sugar",
+      "madhumeh",
+      "sugar zyada",
+      "sugar ki bimari",
+      "blood sugar high",
+      "sugar patient"
+    ],
+    "issue": "Diabetes / High Blood Sugar",
+    "symptoms": [
+      "Frequent urination",
+      "Excessive thirst",
+      "Fatigue",
+      "Blurred vision"
+    ],
+    "medicines": [
+      "Doctor prescribed medicines only",
+      "Metformin (consult doctor)"
+    ],
+    "advice": [
+      "Reduce sugar and carbohydrate intake",
+      "Exercise daily",
+      "Monitor blood sugar regularly",
+      "Have regular checkups with your doctor"
+    ]
+  },
+  {
+    "emoji": "💉",
+    "color": "#f43f5e",
+    "keywords": [
+      "blood pressure",
+      "high bp",
+      "low bp",
+      "hypertension",
+      "bp problem",
+      "bp high",
+      "bp low",
+      "bp badhna",
+      "bp ki problem",
+      "bp check"
+    ],
+    "issue": "Blood Pressure Issue",
+    "symptoms": [
+      "Headache",
+      "Dizziness",
+      "Blurred vision",
+      "Chest pain"
+    ],
+    "medicines": [
+      "Doctor prescribed only",
+      "Amlodipine (consult doctor)"
+    ],
+    "advice": [
+      "Reduce salt intake",
+      "Manage stress",
+      "Check BP regularly",
+      "Follow up with your doctor regularly"
+    ]
+  },
+  {
+    "emoji": "🚨",
+    "color": "#ef4444",
+    "keywords": [
+      "chest pain",
+      "heart pain",
+      "chest tightness",
+      "heart attack",
+      "seene me dard",
+      "dil me dard",
+      "seene me bharipan",
+      "heart attack symptoms",
+      "dil ka dard"
+    ],
+    "issue": "⚠️ Chest Pain - EMERGENCY",
+    "symptoms": [
+      "Chest pain or pressure",
+      "Shortness of breath",
+      "Left arm pain",
+      "Sweating"
+    ],
+    "medicines": [
+      "Go to a doctor immediately",
+      "Aspirin 325mg (only if doctor has advised)"
+    ],
+    "advice": [
+      "⚠ EMERGENCY: Go to hospital immediately",
+      "Lie down and rest",
+      "Do not drive yourself",
+      "Call an ambulance — 108"
+    ]
+  },
+  {
+    "emoji": "🫁",
+    "color": "#7dd3fc",
+    "keywords": [
+      "shortness of breath",
+      "breathing problem",
+      "breathlessness",
+      "difficulty breathing",
+      "wheezing",
+      "saans lene me takleef",
+      "saans phoolna",
+      "dam ghutna",
+      "saans nahi aa rahi"
+    ],
+    "issue": "Breathing Difficulty",
+    "symptoms": [
+      "Shortness of breath",
+      "Wheezing",
+      "Chest tightness",
+      "Rapid breathing"
+    ],
+    "medicines": [
+      "Salbutamol inhaler (for asthma)",
+      "Must consult a doctor"
+    ],
+    "advice": [
+      "Sit upright",
+      "Loosen tight clothing",
+      "Go to a doctor immediately",
+      "Avoid known triggers"
+    ]
+  },
+  {
+    "emoji": "💊",
+    "color": "#38bdf8",
+    "keywords": [
+      "asthma",
+      "wheezing",
+      "inhaler",
+      "chest tightness asthma",
+      "dama",
+      "seene me ghurghurahhat",
+      "saans me awaaz",
+      "inhaler use"
+    ],
+    "issue": "Asthma",
+    "symptoms": [
+      "Wheezing",
+      "Shortness of breath",
+      "Chest tightness",
+      "Coughing at night"
+    ],
+    "medicines": [
+      "Salbutamol inhaler",
+      "Budesonide inhaler",
+      "Doctor prescribed medicines"
+    ],
+    "advice": [
+      "Avoid triggers like dust and smoke",
+      "Always carry your inhaler",
+      "Avoid cold air",
+      "Have regular checkups with your doctor"
+    ]
+  },
+  {
+    "emoji": "🧪",
+    "color": "#2dd4bf",
+    "keywords": [
+      "urinary infection",
+      "uti",
+      "urine infection",
+      "burning urination",
+      "frequent urination",
+      "peshab me jalan",
+      "urine me jalan",
+      "bar bar peshab",
+      "peshab baar baar"
+    ],
+    "issue": "Urinary Tract Infection (UTI)",
+    "symptoms": [
+      "Burning during urination",
+      "Frequent urge to urinate",
+      "Cloudy urine",
+      "Lower abdomen pain"
+    ],
+    "medicines": [
+      "Nitrofurantoin",
+      "Norflox",
+      "Drink plenty of ORS and water"
+    ],
+    "advice": [
+      "Drink plenty of water",
+      "Drink cranberry juice",
+      "Maintain personal hygiene",
+      "Get antibiotics prescribed by a doctor"
+    ]
+  },
+  {
+    "emoji": "🦠",
+    "color": "#a3e635",
+    "keywords": [
+      "typhoid",
+      "enteric fever",
+      "typhoid fever",
+      "continuous fever",
+      "tyfoid",
+      "bar bar tez bukhar",
+      "lambi bimari bukhar",
+      "pet me infection"
+    ],
+    "issue": "Typhoid Fever",
+    "symptoms": [
+      "High continuous fever",
+      "Stomach pain",
+      "Weakness",
+      "Loss of appetite"
+    ],
+    "medicines": [
+      "Azithromycin (consult doctor)",
+      "Cefixime (consult doctor)",
+      "ORS"
+    ],
+    "advice": [
+      "Must consult a doctor",
+      "Avoid eating outside food",
+      "Drink boiled water",
+      "Take complete bed rest"
+    ]
+  },
+  {
+    "emoji": "🦠",
+    "color": "#facc15",
+    "keywords": [
+      "malaria",
+      "mosquito fever",
+      "chills fever",
+      "shivering fever",
+      "malarial fever",
+      "kaanpna",
+      "thith thithakar bukhar",
+      "maleria"
+    ],
+    "issue": "Malaria",
+    "symptoms": [
+      "High fever with chills",
+      "Sweating",
+      "Headache",
+      "Body ache"
+    ],
+    "medicines": [
+      "Chloroquine (consult doctor)",
+      "Artemether (consult doctor)"
+    ],
+    "advice": [
+      "Go to a doctor immediately",
+      "Use mosquito nets",
+      "Prevent water from stagnating",
+      "Get a blood test done"
+    ]
+  },
+  {
+    "emoji": "🩺",
+    "color": "#fb923c",
+    "keywords": [
+      "dengue",
+      "dengue fever",
+      "low platelet",
+      "bone pain fever",
+      "dengoo",
+      "haddiyon me dard bukhar",
+      "aankh ke peeche dard",
+      "platelet low"
+    ],
+    "issue": "Dengue Fever",
+    "symptoms": [
+      "High fever",
+      "Severe headache",
+      "Pain behind eyes",
+      "Joint and muscle pain",
+      "Rash"
+    ],
+    "medicines": [
+      "Paracetamol only",
+      "Plenty of ORS and water",
+      "Do NOT take Aspirin"
+    ],
+    "advice": [
+      "Go to hospital immediately",
+      "Get platelet count checked",
+      "Do NOT take Aspirin or Ibuprofen",
+      "Protect yourself from mosquitoes"
+    ]
+  },
+  {
+    "emoji": "🧫",
+    "color": "#eab308",
+    "keywords": [
+      "jaundice",
+      "yellow skin",
+      "yellow eyes",
+      "liver problem",
+      "hepatitis",
+      "piliya",
+      "peeli skin",
+      "aankhein peeli",
+      "peela paan",
+      "liver kharab"
+    ],
+    "issue": "Jaundice / Hepatitis",
+    "symptoms": [
+      "Yellow skin and eyes",
+      "Dark urine",
+      "Fatigue",
+      "Abdominal pain"
+    ],
+    "medicines": [
+      "Doctor prescribed only",
+      "Liver tonic (consult doctor)"
+    ],
+    "advice": [
+      "See a doctor immediately",
+      "Avoid oily food",
+      "Strictly avoid alcohol",
+      "Take complete rest"
+    ]
+  },
+  {
+    "emoji": "🩸",
+    "color": "#dc2626",
+    "keywords": [
+      "anemia",
+      "iron deficiency",
+      "low hemoglobin",
+      "pale skin",
+      "khoon ki kami",
+      "kamzori anemia",
+      "khoon kam",
+      "iron ki kami",
+      "hemoglobin kam"
+    ],
+    "issue": "Anemia / Iron Deficiency",
+    "symptoms": [
+      "Fatigue",
+      "Pale skin",
+      "Shortness of breath",
+      "Dizziness"
+    ],
+    "medicines": [
+      "Iron tablets (Ferrous sulfate)",
+      "Folic acid",
+      "Vitamin B12 supplements"
+    ],
+    "advice": [
+      "Eat iron-rich food (spinach, lentils, meat)",
+      "Take iron with Vitamin C",
+      "Get a blood test from your doctor",
+      "Have regular checkups"
+    ]
+  },
+  {
+    "emoji": "⚗️",
+    "color": "#a78bfa",
+    "keywords": [
+      "thyroid",
+      "thyroid disorder",
+      "hypothyroid",
+      "hyperthyroid",
+      "thyroid problem",
+      "thyroid test",
+      "weight gain thyroid",
+      "baal girna thyroid"
+    ],
+    "issue": "Thyroid Disorder",
+    "symptoms": [
+      "Unexplained weight change",
+      "Fatigue",
+      "Hair loss",
+      "Mood changes"
+    ],
+    "medicines": [
+      "Levothyroxine (consult doctor)",
+      "Doctor prescribed only"
+    ],
+    "advice": [
+      "Get a TSH blood test",
+      "Must consult a doctor",
+      "Take medicine regularly",
+      "Use iodized salt"
+    ]
+  },
+  {
+    "emoji": "🩹",
+    "color": "#34d399",
+    "keywords": [
+      "sprain",
+      "ankle sprain",
+      "muscle strain",
+      "twisted ankle",
+      "ligament injury",
+      "moch",
+      "pair me moch",
+      "paon moda",
+      "ankle pain",
+      "paon me moch"
+    ],
+    "issue": "Sprain / Muscle Strain",
+    "symptoms": [
+      "Pain at injury site",
+      "Swelling",
+      "Bruising",
+      "Limited movement"
+    ],
+    "medicines": [
+      "Ibuprofen 400mg",
+      "Volini gel",
+      "Moov cream"
+    ],
+    "advice": [
+      "Follow RICE: Rest, Ice, Compression, Elevation",
+      "Apply ice for 24 hours",
+      "Avoid walking too much",
+      "Get an X-ray if severe"
+    ]
+  },
+  {
+    "emoji": "🦴",
+    "color": "#e2e8f0",
+    "keywords": [
+      "fracture",
+      "bone break",
+      "bone fracture",
+      "broken bone",
+      "haddi toot",
+      "haddi tuti",
+      "bone toota",
+      "haath toota",
+      "pair toota"
+    ],
+    "issue": "⚠️ Possible Fracture",
+    "symptoms": [
+      "Severe pain",
+      "Swelling",
+      "Deformity",
+      "Inability to move"
+    ],
+    "medicines": [
+      "Paracetamol for pain relief",
+      "Go to a doctor immediately"
+    ],
+    "advice": [
+      "⚠ Go to hospital immediately",
+      "Do not move the injured area",
+      "Immobilize the limb",
+      "X-ray is essential"
+    ]
+  },
+  {
+    "emoji": "🧠",
+    "color": "#818cf8",
+    "keywords": [
+      "depression",
+      "sadness",
+      "low mood",
+      "feeling sad",
+      "loss of interest",
+      "udaasi",
+      "dil nahi lagta",
+      "rone ka mann",
+      "akela feel",
+      "kuch achha nahi lagta"
+    ],
+    "issue": "Depression / Low Mood",
+    "symptoms": [
+      "Persistent sadness",
+      "Loss of interest",
+      "Fatigue",
+      "Changes in sleep"
+    ],
+    "medicines": [
+      "Do not take any medicine without a doctor"
+    ],
+    "advice": [
+      "Talk to someone you trust",
+      "Consult a psychiatrist",
+      "Exercise regularly",
+      "Do not isolate yourself"
+    ]
+  },
+  {
+    "emoji": "🦠",
+    "color": "#fb923c",
+    "keywords": [
+      "food poisoning",
+      "contaminated food",
+      "vomiting after eating",
+      "diarrhea after eating",
+      "khaane se ulti",
+      "khaana khaake beemar",
+      "bahar ka khana beemar",
+      "khana khaake dast"
+    ],
+    "issue": "Food Poisoning",
+    "symptoms": [
+      "Nausea",
+      "Vomiting",
+      "Diarrhea",
+      "Stomach cramps",
+      "Fever"
+    ],
+    "medicines": [
+      "ORS",
+      "Norflox TZ",
+      "Ondansetron"
+    ],
+    "advice": [
+      "Drink plenty of ORS",
+      "Avoid solid food for a few hours",
+      "Go to hospital if very severe",
+      "Always wash hands before eating"
+    ]
+  },
+  {
+    "emoji": "🦠",
+    "color": "#fcd34d",
+    "keywords": [
+      "chickenpox",
+      "varicella",
+      "itchy blisters",
+      "blisters all over body",
+      "chechak",
+      "chhoti maa",
+      "chhale wale daane",
+      "body me daane khujli"
+    ],
+    "issue": "Chickenpox",
+    "symptoms": [
+      "Itchy blisters all over body",
+      "Fever",
+      "Tiredness",
+      "Loss of appetite"
+    ],
+    "medicines": [
+      "Calamine lotion",
+      "Paracetamol",
+      "Acyclovir (consult doctor)"
+    ],
+    "advice": [
+      "Stay at home as it is contagious",
+      "Cut nails short and avoid scratching",
+      "Bathe with cool water",
+      "Must consult a doctor"
+    ]
+  },
+  {
+    "emoji": "🩺",
+    "color": "#f87171",
+    "keywords": [
+      "measles",
+      "red rash fever",
+      "body rash with fever",
+      "khasra",
+      "viral rash",
+      "laal daane fever"
+    ],
+    "issue": "Measles",
+    "symptoms": [
+      "High fever",
+      "Runny nose",
+      "Red rash on body",
+      "Cough"
+    ],
+    "medicines": [
+      "Paracetamol",
+      "Vitamin A (consult doctor)",
+      "Doctor prescribed"
+    ],
+    "advice": [
+      "See a doctor immediately",
+      "Stay isolated at home",
+      "Protect eyes from bright light",
+      "Ensure children are vaccinated"
+    ]
+  },
+  {
+    "emoji": "🫘",
+    "color": "#a78bfa",
+    "keywords": [
+      "kidney stone",
+      "renal stone",
+      "kidney pain",
+      "blood in urine pain",
+      "pathri",
+      "gurdah ki pathri",
+      "kidney me pathri",
+      "pith me dard urine",
+      "pet me stone"
+    ],
+    "issue": "Kidney Stone",
+    "symptoms": [
+      "Severe side and back pain",
+      "Pain during urination",
+      "Blood in urine",
+      "Nausea"
+    ],
+    "medicines": [
+      "Paracetamol or Diclofenac for pain",
+      "Tamsulosin (consult doctor)",
+      "Drink plenty of water"
+    ],
+    "advice": [
+      "Drink at least 3 liters of water daily",
+      "Reduce salt and protein intake",
+      "Get an ultrasound from your doctor",
+      "Go to hospital for severe pain"
+    ]
+  },
+  {
+    "emoji": "🤰",
+    "color": "#fda4af",
+    "keywords": [
+      "pregnancy",
+      "pregnant",
+      "missed period",
+      "pregnancy symptoms",
+      "garbhawati",
+      "pet me bacha",
+      "pregnant hona",
+      "pregnancy ke lakshan"
+    ],
+    "issue": "Pregnancy Related Symptoms",
+    "symptoms": [
+      "Nausea",
+      "Vomiting",
+      "Missed period",
+      "Fatigue"
+    ],
+    "medicines": [
+      "Folic acid",
+      "Doctor prescribed only",
+      "Do not take any medicine without a doctor"
+    ],
+    "advice": [
+      "See a gynecologist immediately",
+      "Take prenatal vitamins",
+      "Have regular checkups",
+      "Maintain a healthy diet"
+    ]
+  },
+  {
+    "emoji": "⚕️",
+    "color": "#fb923c",
+    "keywords": [
+      "obesity",
+      "overweight",
+      "excess weight",
+      "high bmi",
+      "motapa",
+      "mota hona",
+      "wazan zyada",
+      "weight zyada",
+      "fat hona"
+    ],
+    "issue": "Obesity / Overweight",
+    "symptoms": [
+      "Excess body weight",
+      "Fatigue",
+      "Joint pain",
+      "Breathlessness on exertion"
+    ],
+    "medicines": [
+      "Do not take any weight loss medicine without a doctor"
+    ],
+    "advice": [
+      "Follow a balanced diet",
+      "Exercise daily",
+      "Avoid processed food",
+      "Consult a dietitian"
+    ]
+  },
+  {
+    "emoji": "💉",
+    "color": "#c4b5fd",
+    "keywords": [
+      "hair loss",
+      "alopecia",
+      "bald patches",
+      "excessive hair fall",
+      "thinning hair",
+      "baal girna",
+      "ganjapan",
+      "baalon ka jhadna",
+      "takla",
+      "hair fall problem"
+    ],
+    "issue": "Hair Loss / Alopecia",
+    "symptoms": [
+      "Excessive hair fall",
+      "Thinning hair",
+      "Bald patches"
+    ],
+    "medicines": [
+      "Minoxidil solution (consult doctor)",
+      "Biotin supplements",
+      "Hair growth shampoo"
+    ],
+    "advice": [
+      "Manage stress",
+      "Eat protein-rich food",
+      "Avoid tight hairstyles",
+      "See a dermatologist"
+    ]
+  },
+  {
+    "emoji": "💉",
+    "color": "#7dd3fc",
+    "keywords": [
+      "cold hands",
+      "cold feet",
+      "poor circulation",
+      "cold extremities",
+      "haath thande",
+      "paon thande",
+      "haath paon thande rehte",
+      "circulation problem"
+    ],
+    "issue": "Poor Circulation / Cold Extremities",
+    "symptoms": [
+      "Cold hands and feet",
+      "Numbness",
+      "Tingling sensation"
+    ],
+    "medicines": [
+      "Better to consult a doctor"
+    ],
+    "advice": [
+      "Exercise regularly",
+      "Wear warm clothes",
+      "Avoid smoking",
+      "Get blood circulation checked by a doctor"
+    ]
+  },
+  {
+    "emoji": "🩺",
+    "color": "#c4b5fd",
+    "keywords": [
+      "numbness",
+      "tingling",
+      "pins and needles",
+      "limb numb",
+      "jhanjhnahat",
+      "haath soona",
+      "paon soona",
+      "haath me jhanjhnahat",
+      "limb numb"
+    ],
+    "issue": "Numbness / Tingling",
+    "symptoms": [
+      "Numbness in limbs",
+      "Tingling sensation",
+      "Weakness"
+    ],
+    "medicines": [
+      "Vitamin B12 supplements",
+      "Better to consult a doctor"
+    ],
+    "advice": [
+      "Avoid sitting in one position too long",
+      "Get B12 deficiency checked",
+      "See a neurologist if it happens frequently"
+    ]
+  },
+  {
+    "emoji": "⚕️",
+    "color": "#34d399",
+    "keywords": [
+      "unexplained weight loss",
+      "sudden weight loss",
+      "rapid weight loss",
+      "wazan kam hona",
+      "vajan ghata",
+      "patla ho raha",
+      "weight gir raha"
+    ],
+    "issue": "Unexplained Weight Loss",
+    "symptoms": [
+      "Rapid weight loss",
+      "Fatigue",
+      "Loss of appetite"
+    ],
+    "medicines": [
+      "Must see a doctor first"
+    ],
+    "advice": [
+      "Get blood tests done",
+      "Check for thyroid and diabetes",
+      "Get a full medical examination",
+      "Maintain proper nutrition"
+    ]
+  },
+  {
+    "emoji": "🩺",
+    "color": "#7dd3fc",
+    "keywords": [
+      "swelling",
+      "body swelling",
+      "edema",
+      "swollen ankles",
+      "sujan",
+      "haath sujan",
+      "pair sujan",
+      "face sujan",
+      "ankles swollen",
+      "body me sujan"
+    ],
+    "issue": "Body Swelling / Edema",
+    "symptoms": [
+      "Swelling in body parts",
+      "Puffiness",
+      "Tightness in skin"
+    ],
+    "medicines": [
+      "Do not take medicine without a doctor",
+      "Furosemide (consult doctor)"
+    ],
+    "advice": [
+      "Reduce salt intake",
+      "Elevate your legs while sitting",
+      "Avoid tight clothing",
+      "Get kidney and heart checked by a doctor"
+    ]
+  },
+  {
+    "emoji": "🩸",
+    "color": "#f87171",
+    "keywords": [
+      "piles",
+      "hemorrhoids",
+      "bleeding stool",
+      "anal pain",
+      "bawaseer",
+      "potty me khoon",
+      "gudda dard",
+      "bleeding during potty",
+      "rectal bleeding"
+    ],
+    "issue": "Piles / Hemorrhoids",
+    "symptoms": [
+      "Bleeding during defecation",
+      "Anal pain",
+      "Itching",
+      "Discomfort"
+    ],
+    "medicines": [
+      "Pilex tablet",
+      "Anovate cream",
+      "Sitz bath"
+    ],
+    "advice": [
+      "Eat fiber-rich food",
+      "Drink plenty of water",
+      "Do not sit on the toilet for too long",
+      "See a proctologist if severe"
+    ]
+  },
+  {
+    "emoji": "🧴",
+    "color": "#fcd34d",
+    "keywords": [
+      "eczema",
+      "dry skin",
+      "skin peeling",
+      "dry patches",
+      "atopic dermatitis",
+      "chamdi fatna",
+      "chamdi sukhna",
+      "skin dry",
+      "khushk chamdi"
+    ],
+    "issue": "Eczema / Dry Skin",
+    "symptoms": [
+      "Dry itchy skin",
+      "Redness",
+      "Skin peeling",
+      "Cracking"
+    ],
+    "medicines": [
+      "Cetaphil moisturizer",
+      "Hydrocortisone cream (consult doctor)",
+      "Coconut oil"
+    ],
+    "advice": [
+      "Moisturize daily",
+      "Avoid hot showers",
+      "Wear cotton clothes",
+      "See a dermatologist"
+    ]
+  },
+  {
+    "emoji": "🩻",
+    "color": "#94a3b8",
+    "keywords": [
+      "psoriasis",
+      "scaly skin",
+      "silver patches skin",
+      "skin scales",
+      "chamdi me silver patches",
+      "scaly skin problem",
+      "psoriatic"
+    ],
+    "issue": "Psoriasis",
+    "symptoms": [
+      "Silver-white scaly patches",
+      "Red skin",
+      "Itching",
+      "Dry skin"
+    ],
+    "medicines": [
+      "Coal tar shampoo",
+      "Salicylic acid cream",
+      "Doctor prescribed steroids"
+    ],
+    "advice": [
+      "Keep skin moisturized",
+      "Avoid stress",
+      "Must see a dermatologist",
+      "Moderate sunlight can be helpful"
+    ]
+  },
+  {
+    "emoji": "🧫",
+    "color": "#a3e635",
+    "keywords": [
+      "fungal infection",
+      "ringworm",
+      "athlete foot",
+      "jock itch",
+      "ring shaped rash",
+      "daad",
+      "khujli ring",
+      "paon me fungal",
+      "groin itching",
+      "fungal"
+    ],
+    "issue": "Fungal Infection",
+    "symptoms": [
+      "Ring-shaped rash",
+      "Itching",
+      "Redness",
+      "Scaling"
+    ],
+    "medicines": [
+      "Clotrimazole cream",
+      "Fluconazole (consult doctor)",
+      "Candid cream"
+    ],
+    "advice": [
+      "Keep affected area clean and dry",
+      "Avoid tight synthetic clothing",
+      "Do not share towels",
+      "Apply cream regularly for 2 weeks"
+    ]
+  },
+  {
+    "emoji": "😷",
+    "color": "#60a5fa",
+    "keywords": [
+      "covid",
+      "coronavirus",
+      "covid-19",
+      "loss of smell",
+      "loss of taste",
+      "corona",
+      "smell nahi aa rahi",
+      "taste nahi",
+      "covid symptoms",
+      "covid19"
+    ],
+    "issue": "COVID-19 Symptoms",
+    "symptoms": [
+      "Fever",
+      "Dry cough",
+      "Fatigue",
+      "Loss of smell or taste",
+      "Breathlessness"
+    ],
+    "medicines": [
+      "Paracetamol",
+      "Must consult a doctor",
+      "Self-isolate"
+    ],
+    "advice": [
+      "Get a COVID test immediately",
+      "Isolate at home",
+      "Consult a doctor",
+      "Monitor your oxygen levels"
+    ]
+  },
+  {
+    "emoji": "🫁",
+    "color": "#f87171",
+    "keywords": [
+      "tuberculosis",
+      "tb",
+      "blood in cough",
+      "night sweats",
+      "weeks of cough",
+      "khansi me khoon",
+      "raat ko pasina",
+      "weeks tak khansi",
+      "TB bimari"
+    ],
+    "issue": "Tuberculosis (TB) - Suspected",
+    "symptoms": [
+      "Persistent cough for weeks",
+      "Blood in cough",
+      "Night sweats",
+      "Weight loss",
+      "Fever"
+    ],
+    "medicines": [
+      "Doctor prescribed TB medicines only",
+      "See a doctor immediately"
+    ],
+    "advice": [
+      "See a doctor immediately",
+      "Get a sputum test",
+      "Wear a mask",
+      "Do not stop treatment midway"
+    ]
+  },
+  {
+    "emoji": "🚨",
+    "color": "#fbbf24",
+    "keywords": [
+      "seizure",
+      "epilepsy",
+      "fits",
+      "convulsion",
+      "uncontrolled shaking",
+      "mirgi",
+      "body kaanpna",
+      "behoshi fits",
+      "mirgi ka daura",
+      "convulsion"
+    ],
+    "issue": "⚠️ Seizure / Epilepsy",
+    "symptoms": [
+      "Uncontrolled body shaking",
+      "Loss of consciousness",
+      "Confusion",
+      "Muscle rigidity"
+    ],
+    "medicines": [
+      "Doctor prescribed anticonvulsants only"
+    ],
+    "advice": [
+      "⚠ Go to hospital immediately",
+      "Do not leave the person alone",
+      "Do not restrain the person during seizure",
+      "Must consult a neurologist"
+    ]
+  },
+  {
+    "emoji": "🚑",
+    "color": "#ef4444",
+    "keywords": [
+      "stroke",
+      "paralysis",
+      "face drooping",
+      "arm weakness sudden",
+      "speech difficulty",
+      "laqwa",
+      "ek taraf kamzori",
+      "chehra tircha",
+      "boli band",
+      "paralysis"
+    ],
+    "issue": "⚠️ Possible Stroke - EMERGENCY",
+    "symptoms": [
+      "Sudden face drooping",
+      "Arm weakness on one side",
+      "Speech difficulty",
+      "Confusion"
+    ],
+    "medicines": [
+      "Do not give any medicine"
+    ],
+    "advice": [
+      "⚠ CALL 108 IMMEDIATELY",
+      "Use FAST test: Face, Arms, Speech, Time",
+      "Take to hospital directly",
+      "Time is critical in a stroke"
+    ]
+  },
+  {
+    "emoji": "🌡️",
+    "color": "#f9a8d4",
+    "keywords": [
+      "viral rash",
+      "fever with rash",
+      "rash and fever",
+      "bukhar ke saath daane",
+      "body pe daane bukhar",
+      "rash wala bukhar"
+    ],
+    "issue": "Viral Fever with Rash",
+    "symptoms": [
+      "Fever",
+      "Rash on body",
+      "Weakness",
+      "Loss of appetite"
+    ],
+    "medicines": [
+      "Paracetamol",
+      "Calamine lotion",
+      "Must consult a doctor"
+    ],
+    "advice": [
+      "Stay isolated at home",
+      "Must consult a doctor",
+      "Check vaccination history",
+      "Avoid scratching"
+    ]
+  },
+  {
+    "emoji": "🩺",
+    "color": "#f9a8d4",
+    "keywords": [
+      "irregular periods",
+      "late periods",
+      "missed period",
+      "irregular menstrual cycle",
+      "mc irregular",
+      "periods nahi aaye",
+      "late mc",
+      "periods late"
+    ],
+    "issue": "Irregular Periods",
+    "symptoms": [
+      "Irregular menstrual cycle",
+      "Late or missed periods",
+      "Hormonal imbalance"
+    ],
+    "medicines": [
+      "Do not take any medicine without a doctor"
+    ],
+    "advice": [
+      "See a gynecologist",
+      "Manage stress",
+      "Get checked for PCOS",
+      "Maintain a healthy diet and exercise routine"
+    ]
+  },
+  {
+    "emoji": "⚗️",
+    "color": "#818cf8",
+    "keywords": [
+      "pcos",
+      "pcod",
+      "hormonal imbalance",
+      "polycystic ovary",
+      "ovary problem",
+      "facial hair female",
+      "hormones",
+      "weight gain female",
+      "pcod problem"
+    ],
+    "issue": "PCOS / Hormonal Imbalance",
+    "symptoms": [
+      "Irregular periods",
+      "Weight gain",
+      "Facial hair",
+      "Acne"
+    ],
+    "medicines": [
+      "Doctor prescribed only",
+      "Metformin (consult doctor)"
+    ],
+    "advice": [
+      "See a gynecologist",
+      "Maintain healthy weight",
+      "Follow a low-carb diet",
+      "Exercise daily"
+    ]
+  },
+  {
+    "emoji": "🦶",
+    "color": "#fb923c",
+    "keywords": [
+      "gout",
+      "uric acid",
+      "big toe pain",
+      "joint red hot swollen",
+      "angootha dard",
+      "toe pain red",
+      "uric acid high",
+      "joint me sujan laal"
+    ],
+    "issue": "Gout / High Uric Acid",
+    "symptoms": [
+      "Sudden severe joint pain",
+      "Red hot swollen joint (usually big toe)",
+      "Tenderness"
+    ],
+    "medicines": [
+      "Colchicine (consult doctor)",
+      "Allopurinol (consult doctor)",
+      "Ibuprofen"
+    ],
+    "advice": [
+      "Avoid red meat and seafood",
+      "Stop alcohol",
+      "Drink plenty of water",
+      "Get a uric acid blood test from your doctor"
+    ]
+  },
+  {
+    "emoji": "🦷",
+    "color": "#fda4af",
+    "keywords": [
+      "mumps",
+      "jaw swelling",
+      "swollen cheeks",
+      "parotid gland swelling",
+      "gaand fulna",
+      "jaw me sujan",
+      "gale me sujan mumps",
+      "chehra sujan"
+    ],
+    "issue": "Mumps",
+    "symptoms": [
+      "Swollen jaw or cheeks",
+      "Fever",
+      "Difficulty chewing",
+      "Headache"
+    ],
+    "medicines": [
+      "Paracetamol",
+      "Must consult a doctor"
+    ],
+    "advice": [
+      "Stay at home as it is contagious",
+      "Eat soft food",
+      "See a doctor",
+      "Check MMR vaccine status"
+    ]
+  }
+]

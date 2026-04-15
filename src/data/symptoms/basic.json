@@ -1,0 +1,1135 @@
+[
+  {
+    "emoji": "🩻",
+    "color": "#a78bfa",
+    "keywords": [
+      "headache",
+      "head pain",
+      "head ache",
+      "tension headache",
+      "sir dard",
+      "sar dard",
+      "sir me dard",
+      "sirdard"
+    ],
+    "issue": "Tension Headache",
+    "symptoms": [
+      "Head pain",
+      "Pressure around forehead",
+      "Sensitivity to light",
+      "Neck stiffness"
+    ],
+    "medicines": [
+      "Paracetamol 500mg",
+      "Ibuprofen 400mg",
+      "Disprin"
+    ],
+    "advice": [
+      "Rest in a dark quiet room",
+      "Drink plenty of water",
+      "Reduce screen time",
+      "See a doctor if pain lasts more than 3 days"
+    ]
+  },
+  {
+    "emoji": "🧠",
+    "color": "#f472b6",
+    "keywords": [
+      "migraine",
+      "one side headache",
+      "half head pain",
+      "throbbing headache",
+      "aura",
+      "aadha sir dard",
+      "aadhe sir me dard",
+      "ek taraf sir dard"
+    ],
+    "issue": "Migraine",
+    "symptoms": [
+      "One-sided throbbing headache",
+      "Nausea",
+      "Sensitivity to light and sound",
+      "Visual disturbances"
+    ],
+    "medicines": [
+      "Sumatriptan (consult doctor)",
+      "Ibuprofen 400mg",
+      "Paracetamol"
+    ],
+    "advice": [
+      "Rest in a dark and quiet room",
+      "Stay away from screens",
+      "Track your triggers",
+      "Consult a neurologist"
+    ]
+  },
+  {
+    "emoji": "🌡️",
+    "color": "#f87171",
+    "keywords": [
+      "fever",
+      "high temperature",
+      "body hot",
+      "chills",
+      "high fever",
+      "bukhar",
+      "bukhaar",
+      "tez bukhar",
+      "garmi lag rahi",
+      "body temperature high"
+    ],
+    "issue": "Viral Fever",
+    "symptoms": [
+      "High body temperature",
+      "Body ache",
+      "Chills",
+      "Weakness"
+    ],
+    "medicines": [
+      "Paracetamol 500mg",
+      "Crocin",
+      "ORS solution"
+    ],
+    "advice": [
+      "Drink plenty of fluids",
+      "Take rest",
+      "Use a cool damp cloth to wipe the body",
+      "See a doctor if temperature exceeds 102°F"
+    ]
+  },
+  {
+    "emoji": "🤧",
+    "color": "#60a5fa",
+    "keywords": [
+      "cold",
+      "runny nose",
+      "blocked nose",
+      "sneezing",
+      "common cold",
+      "stuffy nose",
+      "sardi",
+      "nazla",
+      "zukam",
+      "naak beh rahi",
+      "naak band",
+      "chheenk"
+    ],
+    "issue": "Common Cold",
+    "symptoms": [
+      "Runny or blocked nose",
+      "Sneezing",
+      "Mild fever",
+      "Sore throat"
+    ],
+    "medicines": [
+      "Cetirizine",
+      "Sinarest",
+      "Vicks VapoRub",
+      "Nasivion nasal drops"
+    ],
+    "advice": [
+      "Drink warm water and fluids",
+      "Take steam inhalation",
+      "Avoid cold drinks",
+      "Take Vitamin C"
+    ]
+  },
+  {
+    "emoji": "🫁",
+    "color": "#34d399",
+    "keywords": [
+      "cough",
+      "dry cough",
+      "wet cough",
+      "throat infection",
+      "persistent cough",
+      "night cough",
+      "khansi",
+      "khaansi",
+      "khasi",
+      "raat ko khansi",
+      "sukhi khansi"
+    ],
+    "issue": "Cough / Throat Infection",
+    "symptoms": [
+      "Persistent cough",
+      "Throat irritation",
+      "Phlegm",
+      "Chest discomfort"
+    ],
+    "medicines": [
+      "Benadryl cough syrup",
+      "Honitus",
+      "Alex syrup",
+      "Strepsils"
+    ],
+    "advice": [
+      "Gargle with warm salt water",
+      "Avoid cold food and drinks",
+      "See a doctor if cough lasts more than 2 weeks"
+    ]
+  },
+  {
+    "emoji": "🩺",
+    "color": "#fb923c",
+    "keywords": [
+      "sore throat",
+      "throat pain",
+      "difficulty swallowing",
+      "pharyngitis",
+      "gala dard",
+      "gale me dard",
+      "gala kharab",
+      "gale me kharash",
+      "nigalne me dard"
+    ],
+    "issue": "Sore Throat / Pharyngitis",
+    "symptoms": [
+      "Throat pain",
+      "Difficulty swallowing",
+      "Redness in throat",
+      "Mild fever"
+    ],
+    "medicines": [
+      "Strepsils",
+      "Betadine gargle",
+      "Paracetamol"
+    ],
+    "advice": [
+      "Gargle with warm salt water",
+      "Avoid cold water",
+      "Avoid ice cream",
+      "See a doctor if not better in 3 days"
+    ]
+  },
+  {
+    "emoji": "🏥",
+    "color": "#4ade80",
+    "keywords": [
+      "stomach pain",
+      "abdominal pain",
+      "tummy pain",
+      "stomach ache",
+      "gastritis",
+      "pet dard",
+      "pet me dard",
+      "pet dard ho raha",
+      "nabhi dard",
+      "pait dard"
+    ],
+    "issue": "Stomach Pain / Gastritis",
+    "symptoms": [
+      "Abdominal pain",
+      "Bloating",
+      "Nausea",
+      "Cramps"
+    ],
+    "medicines": [
+      "Gelusil",
+      "Pantoprazole",
+      "Cyclopam",
+      "Pudinhara"
+    ],
+    "advice": [
+      "Eat light food",
+      "Reduce spicy and oily food",
+      "Drink more water",
+      "See a doctor for severe pain"
+    ]
+  },
+  {
+    "emoji": "💊",
+    "color": "#a3e635",
+    "keywords": [
+      "diarrhea",
+      "loose motion",
+      "loose stool",
+      "stomach upset",
+      "watery stool",
+      "dast",
+      "loose potty",
+      "bar bar potty",
+      "ulti dast",
+      "patlaa potty"
+    ],
+    "issue": "Diarrhea / Loose Motion",
+    "symptoms": [
+      "Loose stools",
+      "Stomach cramps",
+      "Dehydration",
+      "Weakness"
+    ],
+    "medicines": [
+      "ORS",
+      "Electral powder",
+      "Norflox TZ",
+      "Econorm sachet"
+    ],
+    "advice": [
+      "Drink ORS frequently",
+      "Follow BRAT diet (banana, rice, apple, toast)",
+      "Avoid oily food",
+      "See a doctor if there is blood in stool"
+    ]
+  },
+  {
+    "emoji": "🤢",
+    "color": "#86efac",
+    "keywords": [
+      "vomiting",
+      "nausea",
+      "feel like vomiting",
+      "repeated vomiting",
+      "ulti",
+      "ji machlana",
+      "jee mataana",
+      "ulti aa rahi",
+      "qaay",
+      "baar baar ulti"
+    ],
+    "issue": "Nausea / Vomiting",
+    "symptoms": [
+      "Nausea",
+      "Vomiting",
+      "Dizziness",
+      "Weakness"
+    ],
+    "medicines": [
+      "Ondem tablet",
+      "Domstal",
+      "Perinorm",
+      "ORS"
+    ],
+    "advice": [
+      "Sip water frequently in small amounts",
+      "Avoid solid food initially",
+      "See a doctor if vomiting is excessive"
+    ]
+  },
+  {
+    "emoji": "🫀",
+    "color": "#fbbf24",
+    "keywords": [
+      "acidity",
+      "heartburn",
+      "acid reflux",
+      "chest burning",
+      "sour burps",
+      "ulcer",
+      "pet me jalan",
+      "seene me jalan",
+      "khatta dakar",
+      "acid",
+      "chest jalan"
+    ],
+    "issue": "Acidity / Acid Reflux",
+    "symptoms": [
+      "Burning sensation in chest",
+      "Sour burps",
+      "Stomach discomfort",
+      "Bloating"
+    ],
+    "medicines": [
+      "Gelusil MPS",
+      "Pantoprazole",
+      "Ranitidine",
+      "Eno"
+    ],
+    "advice": [
+      "Do not lie down immediately after eating",
+      "Reduce tea and coffee",
+      "Eat small frequent meals",
+      "Avoid tight clothing"
+    ]
+  },
+  {
+    "emoji": "🩹",
+    "color": "#d8b4fe",
+    "keywords": [
+      "constipation",
+      "hard stool",
+      "no bowel movement",
+      "straining",
+      "kabz",
+      "qabz",
+      "kabziyat",
+      "potty nahi",
+      "pet saaf nahi",
+      "hard potty"
+    ],
+    "issue": "Constipation",
+    "symptoms": [
+      "Hard stools",
+      "Straining during bowel movement",
+      "Bloating",
+      "Abdominal discomfort"
+    ],
+    "medicines": [
+      "Isabgol (Psyllium husk)",
+      "Duphalac syrup",
+      "Cremaffin"
+    ],
+    "advice": [
+      "Drink plenty of water",
+      "Eat fiber-rich food",
+      "Walk in the morning",
+      "Avoid sitting for long periods"
+    ]
+  },
+  {
+    "emoji": "💊",
+    "color": "#86efac",
+    "keywords": [
+      "gas",
+      "bloating",
+      "burping",
+      "belching",
+      "flatulence",
+      "pet me gas",
+      "pet fulna",
+      "dakar",
+      "afara",
+      "gas problem",
+      "pet phool raha"
+    ],
+    "issue": "Gas / Bloating",
+    "symptoms": [
+      "Bloated stomach",
+      "Burping",
+      "Flatulence",
+      "Stomach discomfort"
+    ],
+    "medicines": [
+      "Pudinhara",
+      "Eno",
+      "Gas-O-Fast (Simethicone)",
+      "Digene"
+    ],
+    "advice": [
+      "Eat slowly",
+      "Avoid sodas and cold drinks",
+      "Avoid gas-causing foods",
+      "Walk after meals"
+    ]
+  },
+  {
+    "emoji": "🦴",
+    "color": "#94a3b8",
+    "keywords": [
+      "back pain",
+      "lower back pain",
+      "spine pain",
+      "back ache",
+      "kamar dard",
+      "peeth dard",
+      "kamar me dard",
+      "pith dard",
+      "kamar toot rahi"
+    ],
+    "issue": "Lower Back Pain",
+    "symptoms": [
+      "Lower back pain",
+      "Stiffness",
+      "Pain while bending",
+      "Muscle soreness"
+    ],
+    "medicines": [
+      "Ibuprofen 400mg",
+      "Combiflam",
+      "Volini gel",
+      "Moov spray"
+    ],
+    "advice": [
+      "Sit straight with good posture",
+      "Avoid lifting heavy objects",
+      "Apply hot or cold compress",
+      "Exercise as advised by doctor"
+    ]
+  },
+  {
+    "emoji": "🦵",
+    "color": "#f97316",
+    "keywords": [
+      "knee pain",
+      "joint pain",
+      "arthritis",
+      "joint swelling",
+      "ghutna dard",
+      "jodo me dard",
+      "ghutne me dard",
+      "haddi dard",
+      "joint me dard"
+    ],
+    "issue": "Joint Pain / Knee Pain",
+    "symptoms": [
+      "Joint pain",
+      "Swelling",
+      "Stiffness",
+      "Difficulty walking"
+    ],
+    "medicines": [
+      "Ibuprofen",
+      "Diclofenac gel",
+      "Volini",
+      "Calcium supplements"
+    ],
+    "advice": [
+      "Avoid standing for long periods",
+      "Maintain healthy weight",
+      "Apply warm compress",
+      "Consult an orthopedic doctor"
+    ]
+  },
+  {
+    "emoji": "🦴",
+    "color": "#67e8f9",
+    "keywords": [
+      "neck pain",
+      "neck stiffness",
+      "cervical pain",
+      "stiff neck",
+      "gardan dard",
+      "gardan me dard",
+      "gardan akad",
+      "neck me dard"
+    ],
+    "issue": "Neck Pain / Cervical",
+    "symptoms": [
+      "Neck pain",
+      "Stiffness",
+      "Shoulder pain",
+      "Headache"
+    ],
+    "medicines": [
+      "Ibuprofen 400mg",
+      "Volini gel",
+      "Moov cream"
+    ],
+    "advice": [
+      "Correct your sleeping posture",
+      "Avoid looking down at phone for long",
+      "Do neck exercises",
+      "See a physiotherapist if severe"
+    ]
+  },
+  {
+    "emoji": "💪",
+    "color": "#fb923c",
+    "keywords": [
+      "shoulder pain",
+      "arm pain",
+      "shoulder ache",
+      "muscle pain arm",
+      "kandha dard",
+      "kandhe me dard",
+      "baazu dard",
+      "shoulder me dard"
+    ],
+    "issue": "Shoulder / Arm Pain",
+    "symptoms": [
+      "Shoulder pain",
+      "Limited arm movement",
+      "Muscle tightness"
+    ],
+    "medicines": [
+      "Ibuprofen",
+      "Diclofenac gel",
+      "Combiflam"
+    ],
+    "advice": [
+      "Avoid heavy lifting",
+      "Apply warm compress",
+      "Do gentle stretching",
+      "Consult an orthopedic doctor if severe"
+    ]
+  },
+  {
+    "emoji": "🩻",
+    "color": "#f9a8d4",
+    "keywords": [
+      "skin rash",
+      "rash",
+      "itching",
+      "allergy",
+      "skin allergy",
+      "hives",
+      "khujli",
+      "chamdi me daane",
+      "laal daane",
+      "body me khujli",
+      "skin allergy"
+    ],
+    "issue": "Skin Allergy / Rash",
+    "symptoms": [
+      "Red patches",
+      "Itching",
+      "Swelling",
+      "Hives"
+    ],
+    "medicines": [
+      "Cetirizine",
+      "Calamine lotion",
+      "Betnovate cream",
+      "Avil tablet"
+    ],
+    "advice": [
+      "Find and avoid your allergy trigger",
+      "Change your soap or detergent",
+      "Do not scratch",
+      "See a dermatologist if severe"
+    ]
+  },
+  {
+    "emoji": "👁️",
+    "color": "#67e8f9",
+    "keywords": [
+      "eye pain",
+      "red eyes",
+      "eye irritation",
+      "eye infection",
+      "conjunctivitis",
+      "aankhon me dard",
+      "aankhein laal",
+      "aankhein sujan",
+      "eye me jalan"
+    ],
+    "issue": "Conjunctivitis / Eye Irritation",
+    "symptoms": [
+      "Red eyes",
+      "Watering",
+      "Itching",
+      "Discharge from eyes"
+    ],
+    "medicines": [
+      "Tobramycin eye drops",
+      "Refresh tears",
+      "Moxifloxacin drops"
+    ],
+    "advice": [
+      "Do not rub your eyes",
+      "Wash eyes with clean water",
+      "Wear sunglasses",
+      "Get eye drops prescribed by a doctor"
+    ]
+  },
+  {
+    "emoji": "👂",
+    "color": "#fcd34d",
+    "keywords": [
+      "ear pain",
+      "ear ache",
+      "ear infection",
+      "ear discharge",
+      "ringing in ear",
+      "kaan dard",
+      "kaan me dard",
+      "kaan me jalan",
+      "kaan se paani",
+      "kaan band"
+    ],
+    "issue": "Ear Pain / Otitis",
+    "symptoms": [
+      "Ear pain",
+      "Discharge from ear",
+      "Hearing difficulty",
+      "Ringing sound"
+    ],
+    "medicines": [
+      "Waxsol ear drops",
+      "Paracetamol",
+      "Otigo ear drops"
+    ],
+    "advice": [
+      "Do not let water enter the ear",
+      "Do not use cotton swabs",
+      "Consult an ENT doctor"
+    ]
+  },
+  {
+    "emoji": "🦷",
+    "color": "#e2e8f0",
+    "keywords": [
+      "toothache",
+      "tooth pain",
+      "dental pain",
+      "gum pain",
+      "tooth sensitivity",
+      "daant dard",
+      "daant me dard",
+      "masedon me dard",
+      "daad dard",
+      "muh me dard"
+    ],
+    "issue": "Toothache / Dental Pain",
+    "symptoms": [
+      "Tooth pain",
+      "Gum swelling",
+      "Sensitivity to hot or cold",
+      "Jaw pain"
+    ],
+    "medicines": [
+      "Ibuprofen 400mg",
+      "Clove oil",
+      "Sensodyne toothpaste"
+    ],
+    "advice": [
+      "Visit a dentist",
+      "Avoid very hot or cold food",
+      "Gargle with warm salt water",
+      "Reduce sugar intake"
+    ]
+  },
+  {
+    "emoji": "🧠",
+    "color": "#818cf8",
+    "keywords": [
+      "anxiety",
+      "stress",
+      "panic attack",
+      "nervous",
+      "restlessness",
+      "tension",
+      "ghabrahat",
+      "dar lag raha",
+      "bechain",
+      "pareshaan",
+      "ghabrana",
+      "panic"
+    ],
+    "issue": "Anxiety / Stress",
+    "symptoms": [
+      "Restlessness",
+      "Rapid heartbeat",
+      "Sweating",
+      "Difficulty concentrating"
+    ],
+    "medicines": [
+      "Consult a doctor before taking any medicine"
+    ],
+    "advice": [
+      "Practice deep breathing",
+      "Try meditation",
+      "Get adequate sleep",
+      "Reduce caffeine intake",
+      "Talk to a psychiatrist"
+    ]
+  },
+  {
+    "emoji": "💤",
+    "color": "#6366f1",
+    "keywords": [
+      "insomnia",
+      "sleep problem",
+      "cannot sleep",
+      "sleeplessness",
+      "sleep disorder",
+      "neend nahi",
+      "so nahi paa raha",
+      "raat ko neend nahi",
+      "jagte rehna",
+      "sleep nahi aati"
+    ],
+    "issue": "Insomnia / Sleep Disorder",
+    "symptoms": [
+      "Difficulty falling asleep",
+      "Waking up frequently",
+      "Tiredness during the day",
+      "Irritability"
+    ],
+    "medicines": [
+      "Do not take medicine without a doctor",
+      "Melatonin (consult doctor first)"
+    ],
+    "advice": [
+      "Avoid phone use before bedtime",
+      "Sleep at a fixed time every night",
+      "Avoid tea or coffee at night",
+      "Keep room dark and cool"
+    ]
+  },
+  {
+    "emoji": "🩺",
+    "color": "#fda4af",
+    "keywords": [
+      "pimple",
+      "acne",
+      "blackheads",
+      "face pimples",
+      "oily skin",
+      "muhase",
+      "face daane",
+      "muh pe daane",
+      "skin daane",
+      "chehra daane"
+    ],
+    "issue": "Acne / Pimples",
+    "symptoms": [
+      "Pimples on face",
+      "Blackheads",
+      "Oily skin",
+      "Redness"
+    ],
+    "medicines": [
+      "Benzoyl peroxide cream",
+      "Clindamycin gel",
+      "Neem face wash"
+    ],
+    "advice": [
+      "Wash your face regularly",
+      "Do not squeeze pimples",
+      "Use oil-free moisturizer",
+      "See a dermatologist if severe"
+    ]
+  },
+  {
+    "emoji": "🧴",
+    "color": "#c4b5fd",
+    "keywords": [
+      "dandruff",
+      "scalp itching",
+      "hair fall",
+      "white flakes hair",
+      "dry scalp",
+      "rusi",
+      "sir me khujli",
+      "baal girna",
+      "baalon ka jhadna",
+      "dandruff problem"
+    ],
+    "issue": "Dandruff / Hair Fall",
+    "symptoms": [
+      "White flakes on scalp",
+      "Scalp itching",
+      "Hair fall",
+      "Dry scalp"
+    ],
+    "medicines": [
+      "Nizoral shampoo",
+      "Selsun shampoo",
+      "Head & Shoulders",
+      "Biotin supplements"
+    ],
+    "advice": [
+      "Use anti-dandruff shampoo",
+      "Reduce oily food",
+      "Manage stress",
+      "See a doctor if severe"
+    ]
+  },
+  {
+    "emoji": "🌡️",
+    "color": "#fbbf24",
+    "keywords": [
+      "sunburn",
+      "heat stroke",
+      "sun exposure",
+      "heat exhaustion",
+      "loo lagna",
+      "dhoop me jalna",
+      "garmi se behoshi",
+      "tan skin"
+    ],
+    "issue": "Sunburn / Heat Stroke",
+    "symptoms": [
+      "Red painful skin",
+      "Blistering",
+      "Fever",
+      "Dizziness"
+    ],
+    "medicines": [
+      "Aloe vera gel",
+      "Calamine lotion",
+      "Paracetamol"
+    ],
+    "advice": [
+      "Move to a cool place",
+      "Drink plenty of water",
+      "Apply aloe vera gel",
+      "Use SPF sunscreen"
+    ]
+  },
+  {
+    "emoji": "🩹",
+    "color": "#fb923c",
+    "keywords": [
+      "cut",
+      "wound",
+      "bleeding",
+      "minor wound",
+      "injury cut",
+      "kaat gaya",
+      "chot lagi",
+      "zakhm",
+      "khoon aa raha",
+      "chot"
+    ],
+    "issue": "Cut / Minor Wound",
+    "symptoms": [
+      "Bleeding",
+      "Pain",
+      "Redness around wound"
+    ],
+    "medicines": [
+      "Betadine solution",
+      "Neosporin ointment",
+      "Bandage"
+    ],
+    "advice": [
+      "Wash with clean water",
+      "Apply Betadine",
+      "Cover with a bandage",
+      "Get stitches if the cut is deep"
+    ]
+  },
+  {
+    "emoji": "🏥",
+    "color": "#ef4444",
+    "keywords": [
+      "burn",
+      "fire burn",
+      "hot water burn",
+      "burn injury",
+      "scalding",
+      "jal gaya",
+      "aag se jalna",
+      "paani se jalna",
+      "haath jal gaya"
+    ],
+    "issue": "Burn Injury",
+    "symptoms": [
+      "Redness",
+      "Blistering",
+      "Pain",
+      "Skin peeling"
+    ],
+    "medicines": [
+      "Silverex cream",
+      "Burnol",
+      "Paracetamol"
+    ],
+    "advice": [
+      "Rinse with cold water for 10-15 minutes",
+      "Do NOT apply ice directly",
+      "Do NOT apply butter or toothpaste",
+      "Go to hospital for severe burns"
+    ]
+  },
+  {
+    "emoji": "🩺",
+    "color": "#f9a8d4",
+    "keywords": [
+      "menstrual pain",
+      "period pain",
+      "period cramps",
+      "dysmenorrhea",
+      "mahavari dard",
+      "period me dard",
+      "mc dard",
+      "masik dard",
+      "periods me dard"
+    ],
+    "issue": "Menstrual Cramps / Dysmenorrhea",
+    "symptoms": [
+      "Lower abdominal cramps",
+      "Back pain",
+      "Headache",
+      "Fatigue"
+    ],
+    "medicines": [
+      "Ibuprofen 400mg",
+      "Meftal Spas",
+      "Buscopan"
+    ],
+    "advice": [
+      "Apply a hot water bag on abdomen",
+      "Do light exercise",
+      "Drink plenty of water",
+      "See a doctor if very severe"
+    ]
+  },
+  {
+    "emoji": "🩸",
+    "color": "#f87171",
+    "keywords": [
+      "nose bleed",
+      "nosebleed",
+      "epistaxis",
+      "blood from nose",
+      "naak se khoon",
+      "naak beh raha khoon",
+      "naak se bleeding"
+    ],
+    "issue": "Nosebleed / Epistaxis",
+    "symptoms": [
+      "Blood from nose",
+      "Pressure in nose"
+    ],
+    "medicines": [
+      "Generally no medicine needed"
+    ],
+    "advice": [
+      "Sit upright, do not lean back",
+      "Gently pinch the nose for 10 minutes",
+      "Apply cold water on nose",
+      "See an ENT doctor if it happens frequently"
+    ]
+  },
+  {
+    "emoji": "🧪",
+    "color": "#38bdf8",
+    "keywords": [
+      "dehydration",
+      "lack of water",
+      "excessive thirst",
+      "dry mouth",
+      "paani ki kami",
+      "muh sukha",
+      "pyas nahi bujhti",
+      "body me paani nahi",
+      "dark urine"
+    ],
+    "issue": "Dehydration",
+    "symptoms": [
+      "Excessive thirst",
+      "Dry mouth",
+      "Dark urine",
+      "Dizziness",
+      "Weakness"
+    ],
+    "medicines": [
+      "ORS",
+      "Electral powder",
+      "Coconut water"
+    ],
+    "advice": [
+      "Drink water immediately",
+      "Take ORS",
+      "Move to a cool place",
+      "Go to hospital if severe"
+    ]
+  },
+  {
+    "emoji": "🩻",
+    "color": "#818cf8",
+    "keywords": [
+      "dizziness",
+      "vertigo",
+      "spinning sensation",
+      "loss of balance",
+      "lightheadedness",
+      "chakkar",
+      "chakkar aana",
+      "sir ghoomna",
+      "behoshi jaisi feeling",
+      "balance nahi"
+    ],
+    "issue": "Dizziness / Vertigo",
+    "symptoms": [
+      "Spinning sensation",
+      "Loss of balance",
+      "Nausea",
+      "Lightheadedness"
+    ],
+    "medicines": [
+      "Vertin tablet",
+      "Stugeron",
+      "ORS if caused by dehydration"
+    ],
+    "advice": [
+      "Do not stand up suddenly",
+      "Drink plenty of water",
+      "Get adequate sleep",
+      "See a neurologist if it happens frequently"
+    ]
+  },
+  {
+    "emoji": "🏥",
+    "color": "#94a3b8",
+    "keywords": [
+      "weakness",
+      "fatigue",
+      "body weakness",
+      "low energy",
+      "tiredness",
+      "lethargy",
+      "kamzori",
+      "thakaan",
+      "energy nahi",
+      "thaka hua",
+      "sust"
+    ],
+    "issue": "General Weakness / Fatigue",
+    "symptoms": [
+      "Low energy",
+      "Tiredness",
+      "Muscle weakness",
+      "Lack of motivation"
+    ],
+    "medicines": [
+      "Multivitamin",
+      "Iron supplements if anemic",
+      "B12 supplements"
+    ],
+    "advice": [
+      "Sleep 7-8 hours per night",
+      "Drink plenty of water",
+      "Eat a balanced diet",
+      "Get blood tests if weakness persists"
+    ]
+  },
+  {
+    "emoji": "🍽️",
+    "color": "#fbbf24",
+    "keywords": [
+      "loss of appetite",
+      "no hunger",
+      "not feeling hungry",
+      "reduced appetite",
+      "bhookh nahi",
+      "khane ka mann nahi",
+      "bhookh kam",
+      "kuch khane ka mann nahi"
+    ],
+    "issue": "Loss of Appetite",
+    "symptoms": [
+      "No desire to eat",
+      "Nausea",
+      "Weight loss",
+      "Weakness"
+    ],
+    "medicines": [
+      "Apetamin syrup (consult doctor)",
+      "Zinc supplements"
+    ],
+    "advice": [
+      "Eat small meals frequently",
+      "Try liquid diet if eating is difficult",
+      "Manage stress",
+      "See a doctor if it lasts more than a week"
+    ]
+  },
+  {
+    "emoji": "🏥",
+    "color": "#94a3b8",
+    "keywords": [
+      "not feeling well",
+      "general illness",
+      "feeling sick",
+      "unwell",
+      "theek nahi lag raha",
+      "beemar hoon",
+      "bura lag raha",
+      "acha nahi lag raha"
+    ],
+    "issue": "General Illness",
+    "symptoms": [
+      "Not feeling well"
+    ],
+    "medicines": [],
+    "advice": [
+      "Please describe your specific symptoms",
+      "For example: fever, headache, stomach pain",
+      "More detail will help get better information"
+    ]
+  }
+]

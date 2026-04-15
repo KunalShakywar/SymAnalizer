@@ -1,5 +1,5 @@
 import {Routes,Route,BrowserRouter} from "react-router"
-import Aisearch from "./pages/Search"
+import Aisearch from "./pages/Search";
 import SymptomGallery from "./pages/symGallery";
 import { useEffect, useState } from "react";
 import SplashScreen from "./components/Splash";
