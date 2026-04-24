@@ -11,6 +11,16 @@
   --search-shadow: 0 18px 40px rgba(36, 251, 72, 0);
 }
 
+html[data-theme="light"] {
+  --search-bg: #f6fbf7;
+  --search-text: #132114;
+  --search-text-soft: rgba(19, 33, 20, 0.55);
+  --search-text-faint: rgba(19, 33, 20, 0.4);
+  --search-border: rgba(19, 33, 20, 0.14);
+  --search-panel: rgba(19, 33, 20, 0.05);
+  --search-shadow: 0 18px 40px rgba(19, 33, 20, 0.06);
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -152,7 +162,7 @@
 .search-title span,
 .search-diagnosis-title,
 .search-loading-title {
-  color: #fff;
+  color: var(--search-text);
 }
 
 .search-subtitle {
@@ -228,7 +238,7 @@
 .search-history-chip {
   border: 1px solid var(--search-border);
   border-radius: 999px;
-  background: rgba(245, 240, 232, 0.04);
+  background: var(--search-panel);
   color: var(--search-text);
   padding: 8px 14px;
   font-family: "JetBrains Mono", monospace;
@@ -304,7 +314,7 @@
   overflow: hidden;
   margin-top: 40px;
   padding: 32px 28px;
-  background: #eff5e80d;
+  background: var(--search-panel);
 }
 .search-panel-label {
   margin-bottom: 8px;
@@ -363,7 +373,7 @@
   height: 2px;
   overflow: hidden;
   border-radius: 2px;
-  background: rgba(245, 240, 232, 0.06);
+  background: var(--search-panel);
 }
 
 .search-progress-bar {
@@ -383,8 +393,8 @@
 .search-diagnosis-banner {
   margin-bottom: 20px;
   padding: 22px 24px;
-  border-left: 3px solid #4CAF50;
-  background: rgba(232, 245, 232, 0.03);
+  border: 1px solid #4CAF50;
+  background: var(--search-panel);
 }
 
 .search-diagnosis-title {
@@ -402,7 +412,7 @@
 
 .result-card {
   padding: 20px;
-  background: rgba(245, 240, 232, 0.03);
+  background: var(--search-panel);
   animation: slideInCard 0.4s ease both;
 }
 
@@ -423,7 +433,7 @@
 .result-card-empty {
   font-size: 12px;
   font-style: italic;
-  color: rgba(245, 240, 232, 0.2);
+  color: var(--search-text-soft);
 }
 
 .result-card-list {
@@ -444,11 +454,11 @@
   margin-top: 8px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: #fefe;
+  background: var(--app-accent);
 }
 
 .result-card-text {
-  color: rgba(245, 240, 232, 0.85);
+  color: var(--search-text);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.55;
@@ -460,7 +470,7 @@
   font-size: 11px;
   line-height: 1.6;
   color: var(--search-text-faint);
-  background: rgba(232, 245, 234, 0.03);
+  background: var(--search-panel);
 }
 
 @media (max-width: 640px) {

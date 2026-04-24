@@ -1,14 +1,17 @@
-import {Routes,Route,BrowserRouter} from "react-router"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Aisearch from "./pages/Search";
 import SymptomGallery from "./pages/symGallery";
 import { useEffect, useState } from "react";
 import SplashScreen from "./components/Splash";
+import Navbar from "./components/layout/navbarTop";
+import MedicalShope from "./pages/medicalShop/medShop";
 const Layout = () => {
   return (
     <div>
   <Routes>
     <Route path="/" element={<Aisearch/>}/>
     <Route path="/symgallery" element={<SymptomGallery/>}/>
+    <Route path="/medicalshop" element={<MedicalShope/>}/>
   </Routes>
 </div>
   )
@@ -25,7 +28,10 @@ function App() {
   return(
     <>
     <BrowserRouter>
-   {  loading ? <SplashScreen/> : <Layout/>  } 
+    <Navbar/>
+   {  loading ? <SplashScreen/> :
+    <Layout/> 
+     } 
     </BrowserRouter>
     </>
   )

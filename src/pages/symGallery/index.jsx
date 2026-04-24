@@ -30,14 +30,10 @@ export default function SymptomGallery({ data = DEFAULT_DATA }) {
   };
 
   return (
-    <div className="gallery-shell">
+    <div className="gallery-shell gallery-fade-in py-10">
       <div className="gallery-bg-grid" />
-      <div className="gallery-bg-accent gallery-bg-accent-right" />
-      <div className="gallery-bg-accent gallery-bg-accent-left" />
-
       <div className="gallery-layout">
         <div className="gallery-kicker">
-          <span className="gallery-kicker-dot" />
           Visual Symptom Explorer
         </div>
 
@@ -46,11 +42,7 @@ export default function SymptomGallery({ data = DEFAULT_DATA }) {
           <br />
           <span style={{ color: "#4CAF50" }}>Gallery</span>
         </h1>
-
-        <p className="gallery-subtitle">
-          Click on any condition → symptoms, medicines and advice, instantly
-        </p>
-
+        <br />
         <div className="gallery-toolbar">
           <input
             type="search"
@@ -63,8 +55,8 @@ export default function SymptomGallery({ data = DEFAULT_DATA }) {
             className="gallery-search-input"
           />
         </div>
-
         <div className="gallery-results-label">
+          
           {filtered.length} conditions available — click to see details
         </div>
 
@@ -87,7 +79,7 @@ export default function SymptomGallery({ data = DEFAULT_DATA }) {
                       <DetailPanel
                         condition={data[activeIdx]}
                         onClose={() => setActiveIdx(null)}
-                      />
+                        />
                     </div>
                   ) : null}
                 </Fragment>

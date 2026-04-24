@@ -1,4 +1,10 @@
-export default function ResultCard({ label, icon, items = [], delay = 0, wide = false }) {
+export default function ResultCard({
+  label,
+  icon,
+  items = [],
+  delay = 0,
+  wide = false,
+}) {
   return (
     <div
       className={`result-card${wide ? " result-card-wide" : ""}`}

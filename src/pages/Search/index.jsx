@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import { RiMenuSearchFill } from "react-icons/ri";
 import "./Searchstyles.css";
 import ResultCard from "./ResultCard";
+import MedicineSection from "./MedicineSection";
 import { buildSearchResult } from "./searchUtils";
+import { MdHistory } from "react-icons/md";
+import InfoBox from "../../components/toolTip/infoBox";
 import {
   MAX_HISTORY_ITEMS,
   SEARCH_HISTORY_KEY,
@@ -87,21 +90,13 @@ export default function AISearchUI() {
   };
 
   return (
-    <div className="search-shell">
+    <div className="search-shell py-10">
       <div className="search-bg-grid" />
 
       <div className="search-layout">
         <header className="search-header">
           <div className="search-kicker">
-            <Link
-              to="/symgallery"
-              className="search-gallery-link"
-              aria-label="Open symptom gallery"
-            >
-              <RiMenuSearchFill size={28} />
-            </Link>
             <span className="">Click and Check condition</span>
-            <span className="search-kicker-dot" />
           </div>
 
           <h1 className="search-title">
@@ -110,14 +105,15 @@ export default function AISearchUI() {
             <span style={{ color: "#4CAF50" }}>Analyzer</span>
           </h1>
 
-          <p className="search-subtitle">
-            Describe what you&apos;re experiencing → get possible solution according
-            to you describe
-          </p>
         </header>
-
+{/* MAIN SECTION OF THIS PAGE */}
         <section className="search-input-section">
           <div className="search-textarea-wrap">
+            <div className="absolute top-2 right-2 z-10 text-gray-50">
+              <InfoBox text="Describe what you're experiencing → get possible solution" />
+            </div>
+
+          {/* MAIN TEXTAREA */}
             <textarea
               value={query}
               onChange={(e) => setQuery(e.target.value)}
@@ -170,7 +166,7 @@ export default function AISearchUI() {
               </button>
             </div>
           </div>
-
+{/* HISTORY SECTION ONLY 6 KEYWORDS STORES */}
           {history.length > 0 && (
             <div className="search-history">
               <div className="search-history-label">Previous searches</div>
@@ -184,7 +180,11 @@ export default function AISearchUI() {
                     }}
                     type="button"
                   >
-                    {item}
+                    <span className="flex items-center gap-1">
+
+                      <MdHistory size={15} />
+                      {item}
+                    </span>
                   </button>
                 ))}
               </div>
@@ -194,8 +194,6 @@ export default function AISearchUI() {
 
         {loading && (
           <section className="search-loading-card">
-            <div className="search-scanline" />
-
             <div className="search-panel-label">Processing query</div>
             <div className="search-loading-title">
               {loadingPhrases[phraseIndex]}
@@ -229,7 +227,7 @@ export default function AISearchUI() {
             </div>
           </section>
         )}
-
+{/* SEARCH RESULT  */}
         {showResult && answer && !loading && (
           <section className="search-results">
             <div className="search-diagnosis-banner">
@@ -239,20 +237,15 @@ export default function AISearchUI() {
               <div className="search-diagnosis-title">{answer.primary.issue}</div>
               {!answer.isFallback && (
                 <div className="search-match-meta">
-                  Match confidence: {answer.primary.confidence}% for "{answer.query}"
+                  Match confidence: {answer.primary.confidence}% 
                 </div>
               )}
               {!answer.isFallback && answer.primary.matchedTerms?.length > 0 && (
                 <div className="search-match-tags">
-                  {answer.primary.matchedTerms.map((term) => (
-                    <span key={term} className="search-match-tag">
-                      {term}
-                    </span>
-                  ))}
                 </div>
               )}
             </div>
-
+        {/* DETECT SYMTOMS */}
             <div className="search-card-grid">
               <ResultCard
                 label="Detected Symptoms"
@@ -260,14 +253,11 @@ export default function AISearchUI() {
                 items={answer.primary.symptoms}
                 delay={0}
               />
-              <ResultCard
-                label="Suggested Medicines"
-                icon="💊"
-                items={answer.primary.medicines}
-                delay={100}
-              />
+{/* MEDICINE SECTION ISKA ALAG SE FILE BANAYA KYUNKI HUMHE ISME CLICK KAR KE SHOP PAR LE JANA HAI :) */}
+              <MedicineSection items={answer.primary.medicines} delay={100} />
             </div>
-
+         
+{/* MEDICCAL ADVICE */}
             <ResultCard
               label="Medical Advice"
               icon="🩺"
@@ -278,6 +268,8 @@ export default function AISearchUI() {
 
             {!answer.isFallback && answer.related.length > 0 && (
               <div className="search-related-card">
+                <br />
+                {/* CLOSE MATCHE  */}
                 <div className="search-panel-label">Close matches</div>
                 <div className="search-related-list">
                   {answer.related.map((match) => (
@@ -306,9 +298,9 @@ export default function AISearchUI() {
               </div>
             )}
 
-            <div className="search-disclaimer">
+            <div className="search-disclaimer bg-yellow-400/40 border border-yellow-400/60 ">
               ⚠ This is educational purposes only. Always consult a licensed medical
-              professional for diagnosis and treatment Thank You :)
+              professional for diagnosis and treatment Thank You!
             </div>
           </section>
         )}

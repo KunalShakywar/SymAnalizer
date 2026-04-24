@@ -1,4 +1,5 @@
 import InfoCard from "./InfoCard";
+import InfoBox from "../../components/toolTip/infoBox";
 
 export default function DetailPanel({ condition, onClose }) {
   return (
@@ -19,7 +20,12 @@ export default function DetailPanel({ condition, onClose }) {
 
       <div className="gallery-info-grid">
         <InfoCard label="⚡ Detected Symptoms" items={condition.symptoms} />
-        <InfoCard label="💊 Suggested Medicines" items={condition.medicines} />
+        <div className="relative">
+          <div className="absolute top-2 right-2 z-10 text-yellow-500">
+            <InfoBox text="XYZ may not be the exact medicine, please consult a doctor for accurate prescription" />
+          </div>
+          <InfoCard label="💊 Suggested Medicines" items={condition.medicines} />
+        </div>
       </div>
 
       <InfoCard label="🩺 Medical Advice" items={condition.advice} wide />
