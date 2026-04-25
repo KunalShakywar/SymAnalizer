@@ -17,6 +17,72 @@ function tokenize(text) {
     .filter((token) => token.length > 1 && !STOP_WORDS.has(token));
 }
 
+function dedupeList(items) {
+  return Array.from(new Set(items.filter(Boolean)));
+}
+
+function extractTemperatureContext(query) {
+  const normalizedQuery = normalizeText(query);
+  if (!normalizedQuery) return null;
+
+  const highTempOnly = /\b(high temperature|high fever|very high fever|tez bukhar|bahut tez bukhar)\b/.test(
+    normalizedQuery
+  );
+
+  const contextKeyword = /\b(temp|temperature|fever|bukhar|bukhaar|garmi)\b/.test(
+    normalizedQuery
+  );
+
+  const numericMatch = normalizedQuery.match(
+    /(?:temp(?:erature)?|fever|bukhar|bukhaar|garmi)[^0-9]{0,20}(\d{2,3}(?:\.\d+)?)\s*(?:°\s*)?(f|c|fahrenheit|celsius|centigrade)?/
+  );
+  const fallbackNumericMatch = normalizedQuery.match(
+    /\b(\d{2,3}(?:\.\d+)?)\s*(?:°\s*)?(f|c|fahrenheit|celsius|centigrade)?\b/
+  );
+
+  const match = numericMatch || (contextKeyword ? fallbackNumericMatch : null);
+
+  let valueF = null;
+
+  if (match) {
+    const rawValue = Number.parseFloat(match[1]);
+    const rawUnit = (match[2] || "").toLowerCase();
+
+    if (Number.isFinite(rawValue)) {
+      if (rawUnit.startsWith("c")) {
+        valueF = rawValue * 1.8 + 32;
+      } else if (!rawUnit && rawValue <= 45) {
+        valueF = rawValue * 1.8 + 32;
+      } else {
+        valueF = rawValue;
+      }
+    }
+  }
+
+  if (valueF == null && (highTempOnly || contextKeyword)) {
+    valueF = 103;
+  }
+
+  if (valueF == null) return null;
+
+  const severity =
+    valueF == null
+      ? "high"
+      : valueF >= 104
+        ? "emergency"
+        : valueF >= 103
+          ? "high"
+          : valueF >= 100.4
+            ? "fever"
+            : "normal";
+
+  return {
+    display: valueF == null ? "high temperature" : `${valueF.toFixed(1)}°F`,
+    severity,
+    valueF,
+  };
+}
+
 function buildDocumentText(condition) {
   return [
     condition.issue,
@@ -161,7 +227,7 @@ function hasAnyToken(queryTokens, tokens) {
   return tokens.some((token) => queryTokens.includes(token));
 }
 
-function getScenarioBoost(condition, queryTokens, normalizedQuery) {
+function getScenarioBoost(condition, queryTokens, temperatureContext) {
   const issue = normalizeText(condition.issue);
   const matchedTerms = [];
   let boost = 0;
@@ -252,10 +318,20 @@ function getScenarioBoost(condition, queryTokens, normalizedQuery) {
     applyBoost(1.8, ["fever"]);
   }
 
+  if (temperatureContext && issue.includes("fever")) {
+    if (temperatureContext.severity === "emergency") {
+      applyBoost(5.5, ["high temperature"]);
+    } else if (temperatureContext.severity === "high") {
+      applyBoost(4.5, ["temperature"]);
+    } else if (temperatureContext.severity === "fever") {
+      applyBoost(2.5, ["temperature"]);
+    }
+  }
+
   return { boost, matchedTerms };
 }
 
-function scoreDocument(doc, queryVector, queryTokens, normalizedQuery) {
+function scoreDocument(doc, queryVector, queryTokens, normalizedQuery, temperatureContext) {
   if (
     queryVector.vector.size === 0 ||
     queryVector.magnitude === 0 ||
@@ -334,7 +410,7 @@ function scoreDocument(doc, queryVector, queryTokens, normalizedQuery) {
     });
   });
 
-  const scenario = getScenarioBoost(doc.condition, queryTokens, normalizedQuery);
+  const scenario = getScenarioBoost(doc.condition, queryTokens, temperatureContext);
 
   const rankedMatches = matchedTerms
     .map((term, index) => ({
@@ -365,13 +441,50 @@ function scoreDocument(doc, queryVector, queryTokens, normalizedQuery) {
   };
 }
 
+function applyTemperatureGuidance(condition, temperatureContext) {
+  if (!temperatureContext) return condition;
+
+  const issue = normalizeText(condition.issue);
+  if (!issue.includes("fever")) return condition;
+
+  if (temperatureContext.severity === "emergency" || temperatureContext.severity === "high") {
+    return {
+      ...condition,
+      medicines: [],
+      advice: ["Consult a doctor."],
+      temperature: temperatureContext.display,
+      temperatureSeverity: temperatureContext.severity,
+    };
+  }
+
+  const advice = [...(condition.advice || [])];
+
+  if (temperatureContext.severity === "fever") {
+    advice.unshift(
+      `Fever detected (${temperatureContext.display}). Rest, hydrate, and keep monitoring it.`
+    );
+  } else {
+    advice.unshift("Temperature reading is available. Keep monitoring it closely.");
+  }
+
+  return {
+    ...condition,
+    advice: dedupeList(advice),
+    temperature: temperatureContext.display,
+    temperatureSeverity: temperatureContext.severity,
+  };
+}
+
 export function buildSearchResult(input) {
   const queryVector = buildQueryVector(input);
   const queryTokens = queryVector.tokens;
   const normalizedQuery = normalizeText(input);
+  const temperatureContext = extractTemperatureContext(input);
 
   const rankedMatches = docVectors
-    .map((doc) => scoreDocument(doc, queryVector, queryTokens, normalizedQuery))
+    .map((doc) =>
+      scoreDocument(doc, queryVector, queryTokens, normalizedQuery, temperatureContext)
+    )
     .filter(Boolean)
     .sort((a, b) => b.score - a.score || b.confidence - a.confidence)
     .slice(0, 3);
@@ -386,8 +499,10 @@ export function buildSearchResult(input) {
   }
 
   return {
-    primary: rankedMatches[0],
-    related: rankedMatches.slice(1),
+    primary: applyTemperatureGuidance(rankedMatches[0], temperatureContext),
+    related: rankedMatches
+      .slice(1)
+      .map((match) => applyTemperatureGuidance(match, temperatureContext)),
     query: input,
     isFallback: false,
   };

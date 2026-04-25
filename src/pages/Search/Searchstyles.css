@@ -5,7 +5,7 @@
   --search-text: #f5f0e8;
   --search-text-soft: rgba(245, 240, 232, 0.45);
   --search-text-faint: rgba(235, 245, 232, 0.3);
-  --search-border:  #24fb8531;
+  --search-border: #24fb8531;
   --search-panel: rgba(245, 240, 232, 0.04);
   --search-radius: 4px;
   --search-shadow: 0 18px 40px rgba(36, 251, 72, 0);
@@ -41,6 +41,7 @@ html[data-theme="light"] {
 }
 
 @keyframes dotBounce {
+
   0%,
   80%,
   100% {
@@ -67,6 +68,7 @@ html[data-theme="light"] {
 }
 
 @keyframes pulseDot {
+
   0%,
   100% {
     opacity: 0.85;
@@ -130,10 +132,10 @@ html[data-theme="light"] {
   justify-content: center;
   border-radius: 4px;
   color: #3b82f6;
-  background:transparent;
+  background: transparent;
   border: 1px solid rgba(234, 245, 232, 0.527);
   border-radius: 50%;
-  padding:5px;
+  padding: 5px;
   transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
@@ -215,6 +217,8 @@ html[data-theme="light"] {
   right: 14px;
   bottom: 14px;
 }
+
+
 
 .search-history {
   margin-top: 16px;
@@ -316,6 +320,7 @@ html[data-theme="light"] {
   padding: 32px 28px;
   background: var(--search-panel);
 }
+
 .search-panel-label {
   margin-bottom: 8px;
   font-size: 10px;
@@ -469,8 +474,8 @@ html[data-theme="light"] {
   padding: 14px 18px;
   font-size: 11px;
   line-height: 1.6;
-  color: var(--search-text-faint);
-  background: var(--search-panel);
+
+  background-color: hwb(17 48% 0% / 0.253);
 }
 
 @media (max-width: 640px) {

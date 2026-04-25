@@ -30,9 +30,9 @@ export default function DetailPanel({ condition, onClose }) {
 
       <InfoCard label="🩺 Medical Advice" items={condition.advice} wide />
 
-      <div className="gallery-disclaimer">
+      <div className="gallery-disclaimer text-center text-sm mt-6 text-gray-400">
         ⚠ For educational purposes only. Always consult a licensed medical
-        professional.
+        professional for diagnosis and treatment.
       </div>
     </div>
   );

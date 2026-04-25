@@ -416,9 +416,8 @@ html[data-theme="light"] {
   margin-top: 20px;
   border: 1px solid var(--gallery-border);
   border-radius: 4px;
-  background: var(--gallery-panel);
+  background-color: hwb(17 48% 0% / 0.253);
   padding: 14px 18px;
-  color: var(--gallery-text-faint);
   font-size: 11px;
   line-height: 1.6;
 }

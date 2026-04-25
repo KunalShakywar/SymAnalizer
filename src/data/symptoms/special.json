@@ -221,6 +221,7 @@
     ],
     "advice": [
       "Must consult a doctor",
+      "High continuous fever should be checked quickly",
       "Avoid eating outside food",
       "Drink boiled water",
       "Take complete bed rest"
@@ -252,6 +253,7 @@
     ],
     "advice": [
       "Go to a doctor immediately",
+      "High fever with chills can become serious fast",
       "Use mosquito nets",
       "Prevent water from stagnating",
       "Get a blood test done"
@@ -285,6 +287,7 @@
     ],
     "advice": [
       "Go to hospital immediately",
+      "High fever with dengue needs close monitoring",
       "Get platelet count checked",
       "Do NOT take Aspirin or Ibuprofen",
       "Protect yourself from mosquitoes"
@@ -1117,6 +1120,7 @@
     "advice": [
       "Stay isolated at home",
       "Must consult a doctor",
+      "High fever with rash should be checked by a doctor",
       "Check vaccination history",
       "Avoid scratching"
     ]

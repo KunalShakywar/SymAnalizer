@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import { RiMenuSearchFill } from "react-icons/ri";
 import "./Searchstyles.css";
 import ResultCard from "./ResultCard";
 import MedicineSection from "./MedicineSection";
 import { buildSearchResult } from "./searchUtils";
 import { MdHistory } from "react-icons/md";
 import InfoBox from "../../components/toolTip/infoBox";
+import ReloadBtn from "../../components/basicTools/ReloadBtn";
 import {
   MAX_HISTORY_ITEMS,
   SEARCH_HISTORY_KEY,
@@ -24,6 +23,17 @@ export default function AISearchUI() {
 
   const intervalRef = useRef(null);
   const timeoutRef = useRef(null);
+
+  const handleReset = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+
+    setQuery("");
+    setLoading(false);
+    setAnswer(null);
+    setShowResult(false);
+    setPhraseIndex(0);
+  };
 
   useEffect(() => {
     try {
@@ -47,7 +57,7 @@ export default function AISearchUI() {
     };
   }, []);
 
-  const handleAsk = () => {
+  const handleAnalyze = () => {
     if (loading || !query.trim()) return;
 
     const trimmedQuery = query.trim();
@@ -92,8 +102,8 @@ export default function AISearchUI() {
   return (
     <div className="search-shell py-10">
       <div className="search-bg-grid" />
-
       <div className="search-layout">
+       
         <header className="search-header">
           <div className="search-kicker">
             <span className="">Click and Check condition</span>
@@ -108,9 +118,14 @@ export default function AISearchUI() {
         </header>
 {/* MAIN SECTION OF THIS PAGE */}
         <section className="search-input-section">
+               <ReloadBtn onClick={handleReset} />
+          
           <div className="search-textarea-wrap">
             <div className="absolute top-2 right-2 z-10 text-gray-50">
-              <InfoBox text="Describe what you're experiencing → get possible solution" />
+              <InfoBox
+                text="Describe what you're experiencing → get possible solution"
+                autoHideMs={3000}
+              />
             </div>
 
           {/* MAIN TEXTAREA */}
@@ -120,7 +135,7 @@ export default function AISearchUI() {
               onKeyDown={(e) => {
                 if (e.key === "Enter" && !e.shiftKey) {
                   e.preventDefault();
-                  handleAsk();
+                  handleAnalyze();
                 }
               }}
               placeholder="e.g. I have a headache, fever, and sore throat since yesterday..."
@@ -130,7 +145,7 @@ export default function AISearchUI() {
 
             <div className="search-submit-row">
               <button
-                onClick={handleAsk}
+                onClick={handleAnalyze}
                 disabled={loading || !query.trim()}
                 className="search-submit-btn"
                 type="button"
@@ -235,6 +250,11 @@ export default function AISearchUI() {
                 {answer.isFallback ? "Need more detail" : "Best match"}
               </div>
               <div className="search-diagnosis-title">{answer.primary.issue}</div>
+              {answer.primary.temperature && (
+                <div className="search-match-meta">
+                  Detected temperature: {answer.primary.temperature}
+                </div>
+              )}
               {!answer.isFallback && (
                 <div className="search-match-meta">
                   Match confidence: {answer.primary.confidence}% 
@@ -298,7 +318,7 @@ export default function AISearchUI() {
               </div>
             )}
 
-            <div className="search-disclaimer bg-yellow-400/40 border border-yellow-400/60 ">
+            <div className="search-disclaimer text-center text-sm mt-6 text-gray-400">
               ⚠ This is educational purposes only. Always consult a licensed medical
               professional for diagnosis and treatment Thank You!
             </div>

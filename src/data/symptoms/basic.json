@@ -68,6 +68,8 @@
     "color": "#f87171",
     "keywords": [
       "fever",
+      "temperature",
+      "temp",
       "high temperature",
       "body hot",
       "chills",
@@ -94,7 +96,8 @@
       "Drink plenty of fluids",
       "Take rest",
       "Use a cool damp cloth to wipe the body",
-      "See a doctor if temperature exceeds 102°F"
+      "Consult a doctor if temperature is above 103°F or if fever lasts more than 24 hours",
+      "Seek urgent care if temperature reaches 104°F or higher"
     ]
   },
   {
