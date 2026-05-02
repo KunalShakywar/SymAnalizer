@@ -30,10 +30,10 @@ export default function SymptomGallery({ data = DEFAULT_DATA }) {
   };
 
   return (
-    <div className="gallery-shell gallery-fade-in py-10">
+    <div className="gallery-shell py-10">
       <div className="gallery-bg-grid" />
       <div className="gallery-layout">
-        <div className="gallery-kicker">
+        <div className="gallery-kicker ">
           Visual Symptom Explorer
         </div>
 

@@ -27,7 +27,6 @@ export default function AISearchUI() {
   const handleReset = () => {
     if (intervalRef.current) clearInterval(intervalRef.current);
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-
     setQuery("");
     setLoading(false);
     setAnswer(null);
@@ -82,12 +81,15 @@ export default function AISearchUI() {
       const updatedHistory = [
         trimmedQuery,
         ...history.filter(
-          (item) => item.toLowerCase() !== trimmedQuery.toLowerCase()
+          (item) => item.toLowerCase() !== trimmedQuery.toLowerCase(),
         ),
       ].slice(0, MAX_HISTORY_ITEMS);
 
       try {
-        localStorage.setItem(SEARCH_HISTORY_KEY, JSON.stringify(updatedHistory));
+        localStorage.setItem(
+          SEARCH_HISTORY_KEY,
+          JSON.stringify(updatedHistory),
+        );
       } catch {
         // Ignore storage errors and keep the in-memory history.
       }
@@ -103,7 +105,6 @@ export default function AISearchUI() {
     <div className="search-shell py-10">
       <div className="search-bg-grid" />
       <div className="search-layout">
-       
         <header className="search-header">
           <div className="search-kicker">
             <span className="">Click and Check condition</span>
@@ -114,12 +115,11 @@ export default function AISearchUI() {
             <br />
             <span style={{ color: "#4CAF50" }}>Analyzer</span>
           </h1>
-
         </header>
-{/* MAIN SECTION OF THIS PAGE */}
+        {/* MAIN SECTION OF THIS PAGE */}
         <section className="search-input-section">
-               <ReloadBtn onClick={handleReset} />
-          
+          <ReloadBtn onClick={handleReset} />
+
           <div className="search-textarea-wrap">
             <div className="absolute top-2 right-2 z-10 text-gray-50">
               <InfoBox
@@ -128,7 +128,7 @@ export default function AISearchUI() {
               />
             </div>
 
-          {/* MAIN TEXTAREA */}
+            {/* MAIN TEXTAREA */}
             <textarea
               value={query}
               onChange={(e) => setQuery(e.target.value)}
@@ -181,7 +181,7 @@ export default function AISearchUI() {
               </button>
             </div>
           </div>
-{/* HISTORY SECTION ONLY 6 KEYWORDS STORES */}
+          {/* HISTORY SECTION ONLY 6 KEYWORDS STORES */}
           {history.length > 0 && (
             <div className="search-history">
               <div className="search-history-label">Previous searches</div>
@@ -196,7 +196,6 @@ export default function AISearchUI() {
                     type="button"
                   >
                     <span className="flex items-center gap-1">
-
                       <MdHistory size={15} />
                       {item}
                     </span>
@@ -242,14 +241,16 @@ export default function AISearchUI() {
             </div>
           </section>
         )}
-{/* SEARCH RESULT  */}
+        {/* SEARCH RESULT  */}
         {showResult && answer && !loading && (
           <section className="search-results">
             <div className="search-diagnosis-banner">
               <div className="search-panel-label">
                 {answer.isFallback ? "Need more detail" : "Best match"}
               </div>
-              <div className="search-diagnosis-title">{answer.primary.issue}</div>
+              <div className="search-diagnosis-title">
+                {answer.primary.issue}
+              </div>
               {answer.primary.temperature && (
                 <div className="search-match-meta">
                   Detected temperature: {answer.primary.temperature}
@@ -257,15 +258,15 @@ export default function AISearchUI() {
               )}
               {!answer.isFallback && (
                 <div className="search-match-meta">
-                  Match confidence: {answer.primary.confidence}% 
+                  Match confidence: {answer.primary.confidence}%
                 </div>
               )}
-              {!answer.isFallback && answer.primary.matchedTerms?.length > 0 && (
-                <div className="search-match-tags">
-                </div>
-              )}
+              {!answer.isFallback &&
+                answer.primary.matchedTerms?.length > 0 && (
+                  <div className="search-match-tags"></div>
+                )}
             </div>
-        {/* DETECT SYMTOMS */}
+            {/* DETECT SYMTOMS */}
             <div className="search-card-grid">
               <ResultCard
                 label="Detected Symptoms"
@@ -273,11 +274,11 @@ export default function AISearchUI() {
                 items={answer.primary.symptoms}
                 delay={0}
               />
-{/* MEDICINE SECTION ISKA ALAG SE FILE BANAYA KYUNKI HUMHE ISME CLICK KAR KE SHOP PAR LE JANA HAI :) */}
+              {/* MEDICINE SECTION ISKA ALAG SE FILE BANAYA KYUNKI HUMHE ISME CLICK KAR KE SHOP PAR LE JANA HAI :) */}
               <MedicineSection items={answer.primary.medicines} delay={100} />
             </div>
-         
-{/* MEDICCAL ADVICE */}
+
+            {/* MEDICCAL ADVICE */}
             <ResultCard
               label="Medical Advice"
               icon="🩺"
@@ -285,42 +286,9 @@ export default function AISearchUI() {
               delay={200}
               wide
             />
-
-            {!answer.isFallback && answer.related.length > 0 && (
-              <div className="search-related-card">
-                <br />
-                {/* CLOSE MATCHE  */}
-                <div className="search-panel-label">Close matches</div>
-                <div className="search-related-list">
-                  {answer.related.map((match) => (
-                    <button
-                      key={match.issue}
-                      className="search-related-item"
-                      onClick={() =>
-                        setAnswer((current) => ({
-                          ...current,
-                          primary: match,
-                          related: [
-                            current.primary,
-                            ...current.related.filter(
-                              (item) => item.issue !== match.issue
-                            ),
-                          ].slice(0, 2),
-                        }))
-                      }
-                      type="button"
-                    >
-                      <span>{match.issue}</span>
-                      <span>{match.confidence}%</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-
             <div className="search-disclaimer text-center text-sm mt-6 text-gray-400">
-              ⚠ This is educational purposes only. Always consult a licensed medical
-              professional for diagnosis and treatment Thank You!
+              ⚠ This is educational purposes only. Always consult a licensed
+              medical professional for diagnosis and treatment Thank You!
             </div>
           </section>
         )}

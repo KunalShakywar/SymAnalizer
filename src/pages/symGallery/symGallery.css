@@ -430,6 +430,9 @@ html[data-theme="light"] {
 }
 
 @media (max-width: 640px) {
+  .gallery-shell{
+     padding-block:0px;
+  }
   .gallery-layout {
     padding: 36px 16px 56px;
   }

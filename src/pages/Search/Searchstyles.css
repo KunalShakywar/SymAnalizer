@@ -481,6 +481,7 @@ html[data-theme="light"] {
 @media (max-width: 640px) {
   .search-shell {
     display: block;
+    padding-block:0px;
   }
 
   .search-layout {
