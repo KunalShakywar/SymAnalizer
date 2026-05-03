@@ -1,46 +1,39 @@
-import { FiMail, FiUser, FiEdit } from "react-icons/fi";
+import { FiEdit } from "react-icons/fi";
+import ProfileImage from "../../../components/profileImage";
 
 export default function DemoProfile() {
   return (
-    <div className="min-h-screen  flex items-center justify-center p-4">
-
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-6">
-
-        {/* Profile Image */}
-        <div className="flex flex-col items-center">
-          <div className="w-24 h-24 rounded-full bg-green-500 flex items-center justify-center text-white text-3xl font-bold">
-            D
-          </div>
-
-          <h2 className="mt-4 text-xl font-semibold">Under constraction</h2>
-          <p className="text-gray-500 text-sm">abc@gmail.com</p>
-        </div>
-
-        {/* Info Section */}
-        <div className="mt-6 space-y-4">
-
-          {/* Name */}
-          <div className="flex items-center gap-3 p-3 rounded-lg border">
-            <FiUser className="text-gray-400" />
-            <span className="text-gray-700">Under constraction</span>
-          </div>
-
-          {/* Email */}
-          <div className="flex items-center gap-3 p-3 rounded-lg border">
-            <FiMail className="text-gray-400" />
-            <span className="text-gray-700">Not original profile</span>
-          </div>
-
-        </div>
-
-        {/* Button */}
-        <button className="mt-6 w-full flex items-center justify-center gap-2 bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition">
-          <FiEdit />
-          Edit Profile
+    <div className="min-h-screen grid place-items-center">
+      <div className="relative flex items-center justify-center gap-3 rounded-xl bg-green-500/50 p-4">
+        <button
+          type="button"
+          aria-label="Edit profile"
+          className="absolute right-2 top-2 rounded-full bg-white p-1.5 shadow-md transition hover:scale-105"
+        >
+          <FiEdit className="text-sm text-gray-700" />
         </button>
 
+        <div className="flex items-center justify-center">
+          {/* after complete ui then use random default images */}
+          <ProfileImage
+            src={""}
+            size="w-20 h-20"
+          />
+        </div>
+
+        <div className="flex flex-col">
+          <h3 className="font-bold p-0.5">Aakarsh Pandit</h3>
+          <div className="grid grid-cols-2 gap-2 text-sm md:text-xl">
+            <p className="rounded bg-gray-400 p-0.5">Height: 5'11</p>
+            <p className="rounded bg-gray-400 p-0.5">Weight: 65</p>
+            <p className="rounded bg-red-400 p-0.5">Blood G: B+</p>
+            <p className="rounded bg-blue-400 p-0.5">BMI: </p>
+          </div>
+        </div>
       </div>
 
+      {/* History */}
+      <div className="mt-4 flex items-center justify-center gap-3 rounded-xl bg-green-500/50"></div>
     </div>
   );
 }

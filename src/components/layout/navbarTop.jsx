@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink,Link } from "react-router-dom";
 import {
   FiHome,
   FiGrid,
@@ -23,13 +23,18 @@ export default function NavbarDesktop({
   handleLogout,
   visibleLoginLinks,
 }) {
+  const [internalIsSticky, internalSetIsSticky] = useState(false);
+  const resolvedIsSticky = typeof isSticky === "boolean" ? isSticky : internalIsSticky;
+  const updateSticky =
+    typeof setIsSticky === "function" ? setIsSticky : internalSetIsSticky;
+
   useEffect(() => {
     let ticking = false;
 
     const handleScroll = () => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          setIsSticky(window.scrollY > 10);
+          updateSticky(window.scrollY > 10);
           ticking = false;
         });
         ticking = true;
@@ -39,17 +44,17 @@ export default function NavbarDesktop({
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [setIsSticky]);
+  }, [updateSticky]);
 
   return (
     <header
-      className={`hidden bg-green-500/40 md:block fixed left-1/2 z-50 -translate-x-1/2  text-white shadow-lg shadow-slate-950/30 backdrop-blur-md transition-all duration-300 ${
-        isSticky
+      className={`hidden bg-green-500/40 md:block fixed left-1/2 z-50  px-4 rounded-lg -translate-x-1/2  text-white shadow-lg shadow-slate-950/30 backdrop-blur-md transition-all duration-300 ${
+        resolvedIsSticky
           ? "top-5 w-[90%] rounded-2xl"
           : "top-0 w-full rounded-none border-x-0"
       }`}
     >
-      <nav className="mx-auto flex w-full max-w-6xl items-center  justify-between px-4 py-3">
+      <nav className="mx-auto flex w-full max-w-6xl items-center   justify-between px-4 py-3">
         {/* Links */}
         <div className="flex items-center gap-2">
           {NAV_LINKS.map(({ name, path, icon: Icon }) => (
@@ -69,40 +74,9 @@ export default function NavbarDesktop({
         </div>
 
         {/* Profile */}
-        <div className="relative ">
-          <button
-            onClick={() => setIsLoginOpen((p) => !p)}
-            className="grid h-10 w-10 place-items-center rounded-full bg-cyan-500/15"
-          >
-            <FiUser className="h-5 w-5" />
-          </button>
-
-          {isLoginOpen && (
-            <div className="absolute right-0 mt-2 w-52 rounded-2xl border p-2 shadow-xl bg-(--app-panel)">
-              {visibleLoginLinks.map(({ name, path, icon: Icon }) => (
-                <NavLink
-                  key={path}
-                  to={path}
-                  className="flex items-center gap-2 px-3 py-2 text-sm hover:bg-(--app-panel-strong)"
-                  onClick={() => setIsLoginOpen(false)}
-                >
-                  <Icon className="h-4 w-4" />
-                  {name}
-                </NavLink>
-              ))}
-
-              {token && (
-                <button
-                  onClick={handleLogout}
-                  className="flex w-full items-center gap-2 px-3 py-2 text-sm text-red-500 hover:bg-red-500/10"
-                >
-                  <FiLogOut className="h-4 w-4" />
-                  Logout
-                </button>
-              )}
-            </div>
-          )}
-        </div>
+       <Link to="/profile">
+       <FiUser className="border p-1 rounded-xl " size={28}/>
+       </Link>
       </nav>
     </header>
   );

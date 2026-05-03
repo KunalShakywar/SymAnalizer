@@ -16,8 +16,8 @@ const NAV_LINKS = [
 
 export default function NavbarMobile({ token }) {
   return (
-    <footer className="fixed bottom-0 left-0 z-50 w-full md:hidden">
-      <div className="flex justify-around bg-green-500/40 py-2 backdrop-blur-md transition-all duration-300">
+    <footer className="fixed bottom-0  z-50 w-full px-3 md:hidden">
+      <div className="flex justify-around bg-green-500/40 py-2  rounded-lg mb-2 backdrop-blur-md transition-all duration-300">
         {NAV_LINKS.map(({ name, path, icon: Icon, loginPath, isAuth }) => (
           <NavLink
             key={name}

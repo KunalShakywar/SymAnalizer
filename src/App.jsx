@@ -13,6 +13,7 @@ import Footer from "./components/layout/footerBottom";
 // AUTH IMPORT
 import Signup from "./pages/auth/signup";
 import Login from "./pages/auth/login";
+import { Forgot } from "./pages/auth/login"
 // PROFILE IMPORT 
 import Profile from "./pages/auth/profile/profile";
 
@@ -35,6 +36,7 @@ const Layout = () => {
         {/* AUTH SIGN-UP , PROFILE  AND LOG-IN  */}
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/forgot" element={<Forgot/>}/>
         <Route path="/profile" element={<Profile/>}/>  {/* After Signup or Login */}
 
 

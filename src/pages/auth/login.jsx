@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate,Link } from "react-router-dom";
 import { FiMail, FiLock, FiEye, FiEyeOff } from "react-icons/fi";
+import InputField from "../../components/InputField"
 import "./main.css";
+
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -70,8 +72,8 @@ const Login = () => {
             </button>
           </div>
           {/* Button */}
-          <div className="grid grid-cols-3   text-sm gap-4 underline py-2">
-            <p>Remember</p> <p>Forgot</p> <p>First create a account</p>
+          <div className="grid grid-cols-3 text-blue-300  text-sm gap-4 underline py-2">
+            <p>Remember</p> <Link to="/forgot">Forgot-password</Link><Link to="/signup">Sign-up</Link>
           </div>
           <button
             type="submit"
@@ -91,4 +93,112 @@ const Login = () => {
     </div>
   );
 };
+
 export default Login;
+
+export const Forgot = () => {
+  const [email, setEmail] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+  const navigate = useNavigate();
+
+  const passwordsMatch = newPassword === confirmPassword;
+  const isFormValid =
+    email.trim() !== "" &&
+    newPassword.trim() !== "" &&
+    confirmPassword.trim() !== "" &&
+    passwordsMatch;
+
+  const handleForgot = (e) => {
+    e.preventDefault();
+
+    if (!isFormValid || loading) {
+      if (!passwordsMatch) {
+        setError("Passwords do not match.");
+      }
+      return;
+    }
+
+    setLoading(true);
+    setError("");
+    setSuccess("Password reset request sent successfully.");
+
+    setTimeout(() => {
+      setLoading(false);
+      navigate("/login");
+    }, 1200);
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center">
+      <form
+        onSubmit={handleForgot}
+        className="w-full max-w-sm rounded-lg bg-green-500/50 p-6 text-center shadow-md backdrop-blur-md"
+      >
+        <h1 className="text-xl font-semibold">Forgot Password</h1>
+        <div className="py-5 text-left">
+          <InputField
+            placeholder="Enter your email"
+            name="email"
+            type="email"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+              setError("");
+              setSuccess("");
+            }}
+            icon={FiMail}
+          />
+
+          <InputField
+            placeholder="Enter new password"
+            name="password"
+            type="password"
+            value={newPassword}
+            onChange={(e) => {
+              setNewPassword(e.target.value);
+              setError("");
+              setSuccess("");
+            }}
+            icon={FiLock}
+          />
+
+          <InputField
+            placeholder="Confirm new password"
+            name="confirmPassword"
+            type="password"
+            value={confirmPassword}
+            onChange={(e) => {
+              setConfirmPassword(e.target.value);
+              setError("");
+              setSuccess("");
+            }}
+            error={error}
+            icon={FiLock}
+          />
+
+          {success && (
+            <p className="mb-3 text-sm text-green-700">{success}</p>
+          )}
+
+          <button
+            type="submit"
+            disabled={!isFormValid || loading}
+            className={`flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2 text-white transition ${
+              isFormValid && !loading
+                ? "bg-green-600 hover:bg-green-700"
+                : "cursor-not-allowed bg-green-500/40 opacity-60 "
+            }`}
+          >
+            <span className="text-center font-semibold">
+              {loading ? "Sending..." : "Reset Password"}
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+};
